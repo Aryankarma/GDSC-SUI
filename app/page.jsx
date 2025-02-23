@@ -14,11 +14,11 @@ export default function Home() {
     <div>
       <HeroSection/>
       <Testimonials/>
-      <JoinUs/>
       <OurPartners/>
       <Events />
       <Team/>
       <Gallery/>
+      <JoinUs/>
       <ContactUs/>
       <Footer/>
     </div>

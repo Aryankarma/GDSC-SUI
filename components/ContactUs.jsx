@@ -14,7 +14,7 @@ const mail = "/images/Mail.svg";
 const ContactUs = () => {
   return (
     <section className="bg-[#181817] text-white py-16 px-4 flex flex-col items-center">
-      <button className="bg-[#361715] border border-[#EA4335] px-6 py-2 rounded-full mb-4 text-sm md:text-base">
+      <button className="bg-[#361715] hover:bg-[#5f2824] transition border border-[#EA4335] px-6 py-2 rounded-full mb-4 text-sm md:text-base">
         Contact
       </button>
       <h2 className="text-2xl md:text-3xl font-semibold text-center">
@@ -81,7 +81,7 @@ const ContactUs = () => {
 
 const Card = ({ icon, title, description }) => {
   return (
-    <div className="border border-[#FFFFFF] bg-[#2c2c2a67] p-6 rounded-3xl text-center w-full max-w-xs mx-auto flex flex-col items-center">
+    <div className="border border-[#FFFFFF] bg-[#2c2c2a67] p-12 rounded-3xl text-center w-full max-w-md mx-auto flex flex-col items-center">
       <div className="w-20 h-20 flex items-center justify-center">
         <Image src={icon} alt={title} width={80} height={80} />
       </div>
