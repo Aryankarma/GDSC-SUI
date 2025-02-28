@@ -9,19 +9,20 @@ import OurPartners from "../components/OurPartners";
 import Team from "../components/Team";
 import Footer from "../components/Footer";
 
-
 export default function Home() {
   return (
-    <div>
-      <HeroSection/>
-      <Gallery/>
-      <Testimonials/>
-      <OurPartners/>
-      <Events />
-      <Team/>
-      <JoinUs/>
-      <ContactUs/>
-      <Footer/>
+    <div className="flex flex-col">
+      <div className="flex flex-col gap-32">
+        <HeroSection />
+        <Gallery />
+        <OurPartners />
+        <Events />
+        <Testimonials />
+        <Team />
+      </div>
+      <JoinUs />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }
