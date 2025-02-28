@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { InteractiveGridPattern } from "./magicui/interactive-grid-pattern";
+
 
 const HeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
