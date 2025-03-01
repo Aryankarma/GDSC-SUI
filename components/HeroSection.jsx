@@ -3,12 +3,20 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { InteractiveGridPattern } from "./magicui/interactive-grid-pattern";
 
-
 const HeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <section className="text-center relative">
+      <InteractiveGridPattern
+        width={60}
+        height={60}
+        x={-1}
+        y={-1}
+        className={cn(
+          "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]] opacity-40 skew-y-12"
+        )}
+      />
       <nav className="flex justify-between items-center p-4 relative z-50 bg-transparent px-10 md:px-24">
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center justify-between w-full space-x-8">
@@ -83,7 +91,7 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 pt-[2.25rem] md:pt-[5rem]">
         <div className="inline-flex items-center justify-center">
-          <button className="border border-gray-300 px-6 py-2 text-sm  rounded-full hover:bg-gray-50 transition-colors text-gray-700">
+          <button className="border border-gray-300 px-6 py-2 text-sm  rounded-full hover:bg-white bg-gray-50 transition-colors text-gray-700">
             SAGE University, Indore
           </button>
         </div>
@@ -115,12 +123,12 @@ const HeroSection = () => {
               </p>
               <div className="flex flex-wrap justify-center gap-4 md:gap-12 mt-2">
                 <div className="flex gap-12">
-                <span className="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full flex items-center">
-                  💡 Ideate
-                </span>
-                <span className="px-4 py-2 bg-green-100 text-green-800 rounded-full flex items-center">
-                  📗 Learn
-                </span>
+                  <span className="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full flex items-center">
+                    💡 Ideate
+                  </span>
+                  <span className="px-4 py-2 bg-green-100 text-green-800 rounded-full flex items-center">
+                    📗 Learn
+                  </span>
                 </div>
                 <div className="flex gap-12">
                   <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full flex items-center">

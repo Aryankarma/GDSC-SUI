@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "./magicui/marquee";
+import { GridPattern } from "./magicui/grid-pattern";
 
 const reviews = [
   {
@@ -32,14 +33,14 @@ const ReviewCard = ({ img }) => {
   return (
     <figure
       className={cn(
-        "relative h-full w-[40vw] cursor-pointer overflow-hidden rounded-3xl border p-1 gap-2 flex justify-center",
+        "relative h-full w-[45vw] md:w-[40vw] cursor-pointer overflow-hidden rounded-3xl border p-1 gap-1 md:gap-2 flex justify-center",
         // light styles
-        "hover:border-2 hover:border-[#333333] transition-all rounded-[1.75rem] md:rounded-[3.25rem] hover:bg-gray-950/[0]"
+        "hover:border-2 hover:border-[#333333] transition-all rounded-[1.15rem] md:rounded-[3.25rem] hover:bg-gray-950/[0]"
       )}
     >
       <div className="flex">
         <img
-          className="hover:scale-[.99] transition-all rounded-[1.75rem] md:rounded-[3.25rem]"
+          className="hover:scale-[.99] transition-all rounded-[1.15rem] md:rounded-[3.25rem]"
           src={img}
         />
       </div>
@@ -49,7 +50,7 @@ const ReviewCard = ({ img }) => {
 
 function Gallery() {
   return (
-    <div className="relative flex h-[675px] w-full flex-row items-center justify-center overflow-hidden">
+    <div className="relative flex h-[350px] md:h-[675px] w-full flex-row items-center justify-center overflow-hidden">
       <Marquee pauseOnHover vertical className="[--duration:40s]">
         {firstRow.map((review, index) => (
           <ReviewCard key={index} {...review} />

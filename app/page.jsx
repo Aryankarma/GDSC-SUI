@@ -9,22 +9,12 @@ import OurPartners from "../components/OurPartners";
 import Team from "../components/Team";
 import Footer from "../components/Footer";
 import { cn } from "@/lib/utils";
-import { GridPattern } from "../components/magicui/grid-pattern";
+import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
-      <GridPattern
-        width={60}
-        height={60}
-        // x={-1}
-        // y={-1}
-        className={cn(
-          "[mask-image:linear-gradient(to_bottom_right,white,gray-500,white)] opacity-50"
-        )}
-      />
-
-      <div className="flex flex-col gap-32">
+    <div className="flex relative flex-col h-full">
+      <div className="flex  flex-col h-full gap-24 md:gap-32">
         <HeroSection />
         <Gallery />
         <OurPartners />

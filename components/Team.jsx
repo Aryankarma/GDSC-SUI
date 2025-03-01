@@ -141,9 +141,9 @@ const Team = () => {
   );
 
   return (
-    <div className="body">
-      <div className="teamsframe pt-10">
-        <div className="content">
+    <div className="body z-[20] ">
+      <div className="teamsframe pt-10 ">
+        <div className="content w-[75vw] md:w-full">
           <div className="py-10 px-4 flex flex-col items-center relative">
             <button className="bg-[#BDCEE9] hover:bg-[#98a8c0] transition border border-[#4285F4] px-6 py-1 rounded-full mb-4 text-sm md:text-base">
               Team
@@ -168,7 +168,7 @@ const Team = () => {
                 {teamMembers.map((member, index) => (
                   <CarouselItem
                     key={index}
-                    className="flex ml-4 basis-1/5 flex-col items-center gap-3 p-4"
+                    className="flex ml-4 sm:basis-2/3 md:basis-1/5 flex-col items-center gap-3 p-4"
                   >
                     <div
                       key={index}

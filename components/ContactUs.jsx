@@ -30,7 +30,7 @@ const ContactUs = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md;gap-10 mt-4 ">
         <Card
           icon={firstImg}
           title="Become a Speaker"
@@ -95,12 +95,12 @@ const ContactUs = () => {
 
 const Card = ({ icon, title, description }) => {
   return (
-    <div className="border border-gray-500 text-white bg-[#ffffff05] p-6 rounded-3xl text-center w-full max-w-md mx-auto flex flex-col items-center">
+    <div className="border border-gray-500 text-white bg-[#ffffff05] p-6 rounded-3xl text-center w-[75vw] md:w-full max-w-md mx-auto flex flex-col items-center">
       <div className="flex items-center justify-center">
         <Image src={icon} alt={title} width={35} height={35} />
       </div>
-      <h1 className="text-white font-semibold  mt-4">{title}</h1>
-      <p className="text-gray-400 mt-2 w-80 text-sm md:text-base">
+      <h1 className="text-white text-2xl md:text-3xl font-semibold  mt-4">{title}</h1>
+      <p className="text-gray-400 mt-2 text-sm md:text-base">
         {description}
       </p>
       <button className="mt-4 border border-gray-500 px-5 py-2 rounded-3xl flex items-center mx-auto text-sm md:text-base">

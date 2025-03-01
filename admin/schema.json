@@ -1,15 +1,22 @@
 {
-    "gdsc": {
-      "info": {
-        "universityName": "SAGE University Indore",
-        "description": "Google Developer Student Club",
-        "email": "123@test",
-        "socialMedia": {
-          "instagram": "gdsc_university",
-          "linkedin": "gdsc-university",
-          "twitter": "gdsc_university",
-          "github": "gdsc-university"
-        }
+  "gdsc": {
+    "info": {
+      "universityName": "SAGE University Indore",
+      "description": "Google Developer Student Club",
+      "email": "123@test",
+      "socialMedia": {
+        "instagram": "gdsc_university",
+        "linkedin": "gdsc_university",
+        "twitter": "gdsc_university",
+        "github": "gdsc_university"
+      }
+    },
+    "Hero": {
+      "title": "Google Developer Student Club",
+      "description": "Google Developer Group (GDG) is a student-led community backed by Google Developers aimed at empowering undergraduate students from all disciplines to grow their knowledge in technology, build solutions for their local communities, and connect with other members from the Google community.",
+      "cta": "Join Us",
+      "assets": {
+        "image1": "asset_image_url1"
       },
       "impact": {
         "ideate": {
@@ -28,258 +35,197 @@
           "title": "Grow",
           "description": "xyz"
         }
-      },
-      "gallery": {
-        "image1": "gallery_image_url1",
-        "image2": "gallery_image_url2",
-        "image3": "gallery_image_url3",
-        "image4": "gallery_image_url4",
-        "image5": "gallery_image_url5"
-      },
-      "team": {
-        "sectionDescription": "A passionate team of developers, innovators, and community builders driving GDSC-SUI forward.",
-        "leads": [
-          {
-            "id": "l1",
-            "name": "Lead Name",
-            "role": "GDSC Lead",
-            "type": "lead",
-            "team": "core",
-            "image": "image_url",
-            "batch": "2023-24",
-            "linkedin": "profile_url",
-            "github": "profile_url",
-            "description": "Brief bio or description",
-            "displayOrder": 1
-          },
-          {
-            "id": "l2",
-            "name": "Technical Lead",
-            "role": "Technical Lead",
-            "type": "lead",
-            "team": "technical",
-            "image": "image_url",
-            "batch": "2023-24",
-            "linkedin": "profile_url",
-            "github": "profile_url",
-            "description": "Brief bio or description",
-            "displayOrder": 2
-          }
-        ],
-        "members": [
-          {
-            "id": "m1",
-            "name": "Member Name",
-            "type": "member",
-            "team": "technical",
-            "role": "Frontend Developer",
-            "image": "image_url",
-            "batch": "2023-24",
-            "linkedin": "profile_url",
-            "github": "profile_url",
-            "skills": ["React", "Firebase"],
-            "projects": ["project_id1", "project_id2"]
-          }
-        ],
-        "teams": [
-          {
-            "name": "Technical Team",
-            "description": "technical",
-            "leadId": "l2"
-          },
-          {
-            "name": "Design Team",
-            "description": "Handles UI/UX",
-            "leadId": "l3"
-          },
-          {
-            "name": "Management Team",
-            "description": "Manages events",
-            "leadId": "l4"
-          },
-          {
-            "name": "Content Team",
-            "description": "Creates content",
-            "leadId": "l5"
-          }
-        ]
+      }
+    },
+    "gallery": {
+      "image1": "gallery_image_url1",
+      "image2": "gallery_image_url2",
+      "image3": "gallery_image_url3",
+      "image4": "gallery_image_url4",
+      "image5": "gallery_image_url5"
+    },
+    "team": {
+      "sectionDescription": "A passionate team of developers, innovators, and community builders driving GDSC-SUI forward.",
+      "leads": [
+        {
+          "id": "l1",
+          "name": "Lead Name",
+          "role": "GDSC Lead",
+          "type": "lead",
+          "team": "core",
+          "image": "image_url",
+          "batch": "2023-24",
+          "linkedin": "profile_url",
+          "github": "profile_url",
+          "description": "Brief bio or description",
+          "displayOrder": 1
+        },
+        {
+          "id": "l2",
+          "name": "Technical Lead",
+          "role": "Technical Lead",
+          "type": "lead",
+          "team": "technical",
+          "image": "image_url",
+          "batch": "2023-24",
+          "linkedin": "profile_url",
+          "github": "profile_url",
+          "description": "Brief bio or description",
+          "displayOrder": 2
+        }
+      ],
+      "members": [
+        {
+          "id": "m1",
+          "name": "Member Name",
+          "type": "member",
+          "team": "technical",
+          "role": "Frontend Developer",
+          "image": "image_url",
+          "batch": "2023-24",
+          "linkedin": "profile_url",
+          "github": "profile_url",
+          "skills": ["React", "Firebase"],
+          "projects": ["project_id1", "project_id2"]
+        }
+      ],
+      "teams": [
+        {
+          "name": "Technical Team",
+          "description": "technical",
+          "leadId": "l2"
+        },
+        {
+          "name": "Design Team",
+          "description": "Handles UI/UX",
+          "leadId": "l3"
+        },
+        {
+          "name": "Management Team",
+          "description": "Manages events",
+          "leadId": "l4"
+        },
+        {
+          "name": "Content Team",
+          "description": "Creates content",
+          "leadId": "l5"
+        }
+      ]
+    },
+    "events": {
+      "section_metadata": {
+        "title": "Past Events: Relive the Moments",
+        "subtitle": "Explore highlights from our past events, workshops, and meetups—where developers connected, learned, and innovated together!",
+        "assets": {
+          "image1": "asset_image_url1"
+        }
       },
       "events": {
-        "upcoming": {
-          "event1": {
-            "id": "e1",
-            "title": "Event Title",
-            "description": "Event Description",
-            "date": "2025-03-15",
-            "time": "14:00",
-            "venue": "Location",
-            "image": "event_image_url",
-            "registrationLink": "registration_url",
-            "type": "workshop",
-            "status": "upcoming",
-            "organizers": {
-              "leadId": "l2",
-              "teamMembers": ["m1", "m2"]
-            },
-            "speakers": {
-              "speaker1": {
-                "name": "Speaker Name",
-                "designation": "Role",
-                "company": "Company",
-                "image": "speaker_image_url"
-              }
-            }
-          }
-        },
-        "past": {
-          "event1": {
-            "id": "pe1",
-            "title": "Past Event Title",
-            "description": "Event Description",
-            "date": "2025-02-15",
-            "images": {
-              "image1": "event_image_url1",
-              "image2": "event_image_url2"
-            },
-            "type": "hackathon",
-            "status": "completed",
-            "participants": 150,
-            "organizers": {
-              "leadId": "l2",
-              "teamMembers": ["m1", "m2"]
-            }
-          }
+        "event1": {
+          "id": "e1",
+          "title": "Event Title",
+          "description": "Event Description",
+          "date": "2025-03-15",
+          "image": "event_image_url",
+          "type": "workshop",
+          "participants": "120+"
         }
+      }
+    },
+    "partners": {
+      "bizthon": {
+        "id": "p1",
+        "name": "BizThon",
+        "logo": "bizthon_logo_url",
+        "website": "bizthon_website_url"
       },
-      "partners": {
-        "bizthon": {
-          "id": "p1",
-          "name": "BizThon",
-          "logo": "bizthon_logo_url",
-          "website": "bizthon_website_url",
-          "type": "hackathon"
-        },
-        "devlabs": {
-          "id": "p2",
-          "name": "DEVLABS",
-          "logo": "devlabs_logo_url",
-          "website": "devlabs_website_url",
-          "type": "education"
-        },
-        "sunstone": {
-          "id": "p3",
-          "name": "SUNSTONE",
-          "logo": "sunstone_logo_url",
-          "website": "sunstone_website_url",
-          "type": "education"
-        },
-        "code4govtech": {
-          "id": "p4",
-          "name": "CODE4GOVTECH",
-          "logo": "code4govtech_logo_url",
-          "website": "code4govtech_website_url",
-          "type": "government"
-        }
+      "devlabs": {
+        "id": "p2",
+        "name": "DEVLABS",
+        "logo": "devlabs_logo_url",
+        "website": "devlabs_website_url"
       },
-      "projects": {
-        "project1": {
-          "id": "pr1",
-          "title": "Project Title",
-          "description": "Project Description",
-          "image": "project_image_url",
-          "github": "repository_url",
-          "demo": "demo_url",
-          "technologies": ["React", "Firebase"],
-          "team": {
-            "leadId": "l2",
-            "members": ["m1", "m2"]
-          }
+      "sunstone": {
+        "id": "p3",
+        "name": "SUNSTONE",
+        "logo": "sunstone_logo_url",
+        "website": "sunstone_website_url"
+      },
+      "code4govtech": {
+        "id": "p4",
+        "name": "CODE4GOVTECH",
+        "logo": "code4govtech_logo_url",
+        "website": "code4govtech_website_url"
+      }
+    },
+    "testimonials": {
+      "section_metadata": {
+        "title": "What Our Community Says",
+        "subtitle": "Hear from our members about their experiences, growth, and journey with GDSC-SUI",
+        "assets": {
+          "image1": "asset_image_url1"
         }
       },
       "testimonials": {
-        "section_metadata": {
-          "title": "What Our Community Says",
-          "subtitle": "Hear from our members about their experiences, growth, and journey with GDSC-SUI"
+        "testimonial1": {
+          "id": "t1",
+          "name": "Georgia Anderson",
+          "userimage": "profile_image_url",
+          "quoteLogo": "url",
+          "role": "Member",
+          "descripion": "lorem ipsum"
+        }
+      }
+    },
+    "BePart": {
+      "title": "Be a Part of GDSC-SUI",
+      "description": "Connect, learn, and grow with a community of developers passionate about technology and innovation..",
+      "cta": "Join Us",
+      "assets": {
+        "image1": "asset_image_url1"
+      }
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "description": "Have questions or want to collaborate? Reach out to us—we'd love to hear from you!",
+      "options": [
+        {
+          "title": "Become a Speaker",
+          "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
+          "cta": "Get in Touch"
         },
-        "display_settings": {
-          "cards_per_row": 4,
-          "preview_character_limit": 200
-        },
-        "entries": {
-          "testimonial1": {
-            "id": "t1",
-            "user": {
-              "name": "Georgia Anderson",
-              "image": "profile_image_url",
-              "role": "Member"
-            },
-            "content": {
-              "full_text": "Lorem ipsum..",
-              "preview_text": "Lorem ipsum .."
-            },
-            "metadata": {
-              "display_order": 1,
-              "status": "approved"
-            }
-          },
-          "testimonial2": {
-            "id": "t2",
-            "user": {
-              "name": "Georgia Anderson",
-              "image": "profile_image_url",
-              "role": "Member"
-            },
-            "content": {
-              "full_text": "Lorem ipsum .",
-              "preview_text": "Lorem ipsum."
-            },
-            "metadata": {
-              "display_order": 2,
-              "status": "approved"
-            }
-          }
+        {
+          "title": "Host a Hackathon",
+          "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
+          "cta": "Get in Touch"
         }
-      },
-      "contact": {
-        "title": "Get in Touch",
-        "description": "Have questions or want to collaborate? Reach out to us—we'd love to hear from you!",
-        "options": [
-          {
-            "title": "Become a Speaker",
-            "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
-            "cta": "Get in Touch"
-          },
-          {
-            "title": "Host a Hackathon",
-            "description": "Lorem ipsum is simply dummy text of the printing and typesetting industry.",
-            "cta": "Get in Touch"
-          }
-        ],
-        "socials": {
-          "instagram": "gdsc_university",
-          "linkedin": "gdsc-university",
-          "twitter": "gdsc_university",
-          "github": "gdsc-university"
-        }
-      },
-      "footer": {
-        "links": [
-          { "name": "GDG Progress Hub", "url": "progress_hub_url" },
-          { "name": "Feedback Pages", "url": "feedback_url" },
-          { "name": "GDG on campus", "url": "gdg_campus_url" }
-        ],
-        "events": [
-          { "name": "Upcoming Events", "url": "upcoming_events_url" },
-          { "name": "Previous Events", "url": "previous_events_url" }
-        ],
-        "team": [
-          { "name": "Leads", "url": "leads_url" },
-          { "name": "Core Members", "url": "core_members_url" }
-        ],
-        "madeWith": {
-          "text": "Made with 💙 by GDSC SUI",
-          "copyright": "Google Developer Group on Campus, SUI. All Rights Reserved"
-        }
+      ],
+      "socials": {
+        "instagram": "gdsc_university",
+        "linkedin": "gdsc-university",
+        "twitter": "gdsc_university",
+        "github": "gdsc-university"
+      }
+    },
+    "footer": {
+      "links": [
+        { "name": "GDG Progress Hub", "url": "progress_hub_url" },
+        { "name": "Feedback Pages", "url": "feedback_url" },
+        { "name": "GDG on campus", "url": "gdg_campus_url" }
+      ],
+      "events": [
+        { "name": "Upcoming Events", "url": "upcoming_events_url" },
+        { "name": "Previous Events", "url": "previous_events_url" }
+      ],
+      "team": [
+        { "name": "Leads", "url": "leads_url" },
+        { "name": "Core Members", "url": "core_members_url" }
+      ],
+      "madeWith": {
+        "text": "Made with 💙 by GDSC SUI",
+        "copyright": "Google Developer Group on Campus, SUI. All Rights Reserved",
+        "gdgsuiImage": "gdgsui_logo_url"
       }
     }
   }
+}

@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Marquee } from "./magicui/marquee3";
+import { InteractiveGridPattern } from "./magicui/interactive-grid-pattern";
 
 export const testimonials = [
   {
@@ -94,7 +95,7 @@ export const testimonials = [
 
 function TestimonialCard({ img, name, position, description }) {
   return (
-    <div className="max-w-sm p-5 bg-white flex flex-col gap-6 rounded-3xl hover:shadow-lg border relative">
+    <div className="max-w-xs md:max-w-sm p-3 md:p-5 flex flex-col gap-6 rounded-3xl hover:shadow-md transition-all border relative">
       <div className="flex items-center space-x-3">
         <img
           src={img}
@@ -131,7 +132,7 @@ const thirdRow = testimonials.slice(testimonials.length / 3);
 function Testimonials() {
   return (
     <div className="h-full w-[95vw] mx-auto">
-      <div className="py-16 px-4 flex flex-col items-center relative">
+      <div className="pb-10 px-4 flex flex-col items-center relative">
         <button className="bg-[#BDCEE9] hover:bg-[#98a8c0] transition border border-[#4285F4] px-6 py-1 rounded-full mb-4 text-sm md:text-base">
           Testimonials
         </button>
@@ -147,17 +148,17 @@ function Testimonials() {
           width={80}
           alt="testimoniaal"
           height={40}
-          className="absolute right-40 top-20"
+          className="absolute hidden sm:flex right-40 top-20"
         />
         <Image
           src={"/logos/testimonialassetblue.png"}
           width={80}
           alt="testimoniaal"
           height={40}
-          className="absolute left-24 top-6"
+          className="absolute hidden sm:flex left-24 top-6"
         />
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 scale-90 md:scale-100">
         <Marquee pauseOnHover className="[--duration:75s]">
           {firstRow.map((testimonial, index) => (
             <TestimonialCard

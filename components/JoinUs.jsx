@@ -6,12 +6,12 @@ const JoinUs = () => {
   return (
     <section className="relative flex flex-col items-center justify-center h-[80vh] md:h-[70vh] lg:h-[60vh] bg-[#f5f9ff] overflow-hidden">
       {/* Background Grid */}
-      <div className="absolute inset-0 bg-[url('/images/join-us-background-grid.svg')] bg-cover"></div>
+      <div className="absolute inset-0 bg-[url('/images/join-us-background-grid.svg')] bg-cover bg-opacity-50"></div>
 
       {/* Background Shapes */}
-      <img src="/images/green star.svg" alt="Green Star" className="absolute top-0 right-16" />
-      <img src="/images/yellow ring.svg" alt="Yellow Ring" className="absolute bottom-0 left-12 w-32 " />
-      <img src="/images/red circles.svg" alt="Red Circles" className="absolute bottom-10 right-20 w-30" />
+      <img src="/images/green star.svg" alt="Green Star" className=" scale-[.4] md:scale-100 absolute top-0 right-16" />
+      <img src="/images/yellow ring.svg" alt="Yellow Ring" className=" scale-[.4] md:scale-100 absolute bottom-0 left-12 w-32 " />
+      <img src="/images/red circles.svg" alt="Red Circles" className=" scale-[.4] md:scale-100 absolute bottom-10 right-20 w-30" />
 
       {/* Main Content */}
       <div className="text-center z-10">
