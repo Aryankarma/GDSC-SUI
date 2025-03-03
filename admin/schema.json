@@ -38,80 +38,135 @@
       }
     },
     "gallery": {
-      "image1": "gallery_image_url1",
-      "image2": "gallery_image_url2",
-      "image3": "gallery_image_url3",
-      "image4": "gallery_image_url4",
-      "image5": "gallery_image_url5"
+      "image1": "https://res.cloudinary.com/dawbyjcyo/image/upload/v1740832988/1_ae7qsy.png",
+      "image2": "https://res.cloudinary.com/dawbyjcyo/image/upload/v1740832988/2_z5eybo.png",
+      "image3": "https://res.cloudinary.com/dawbyjcyo/image/upload/v1740832999/3_qkhvle.png",
+      "image4": "https://res.cloudinary.com/dawbyjcyo/image/upload/v1740832994/4_dj6eql.png",
+      "image5": "https://res.cloudinary.com/dawbyjcyo/image/upload/v1740832993/5_r9suak.png",
+      "image6": "https://res.cloudinary.com/dawbyjcyo/image/upload/v1740833005/6_poypg9.png"
     },
-    "team": {
-      "sectionDescription": "A passionate team of developers, innovators, and community builders driving GDSC-SUI forward.",
-      "leads": [
-        {
-          "id": "l1",
-          "name": "Lead Name",
-          "role": "GDSC Lead",
-          "type": "lead",
-          "team": "core",
-          "image": "image_url",
-          "batch": "2023-24",
-          "linkedin": "profile_url",
-          "github": "profile_url",
-          "description": "Brief bio or description",
-          "displayOrder": 1
-        },
-        {
-          "id": "l2",
-          "name": "Technical Lead",
-          "role": "Technical Lead",
-          "type": "lead",
-          "team": "technical",
-          "image": "image_url",
-          "batch": "2023-24",
-          "linkedin": "profile_url",
-          "github": "profile_url",
-          "description": "Brief bio or description",
-          "displayOrder": 2
+    "team": [
+      {
+        "name": "Godhuli Vays",
+        "position": "Chapter Lead",
+        "image": "/images/leads/chapter.jpg",
+        "bgColor": "#FFC0CB",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/godhuli",
+          "mail": "mailto:godhuli@example.com",
+          "twitter": "https://twitter.com/godhuli",
+          "github": "https://github.com/godhuli"
         }
-      ],
-      "members": [
-        {
-          "id": "m1",
-          "name": "Member Name",
-          "type": "member",
-          "team": "technical",
-          "role": "Frontend Developer",
-          "image": "image_url",
-          "batch": "2023-24",
-          "linkedin": "profile_url",
-          "github": "profile_url",
-          "skills": ["React", "Firebase"],
-          "projects": ["project_id1", "project_id2"]
+      },
+      {
+        "name": "Aryan Karma",
+        "position": "Technical Lead",
+        "image": "/images/leads/technical.jpg",
+        "bgColor": "#A0C2F9",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/aryankarma",
+          "mail": "mailto:aryankarma@example.com",
+          "twitter": "https://twitter.com/aryankarma",
+          "github": "https://github.com/aryankarma"
         }
-      ],
-      "teams": [
-        {
-          "name": "Technical Team",
-          "description": "technical",
-          "leadId": "l2"
-        },
-        {
-          "name": "Design Team",
-          "description": "Handles UI/UX",
-          "leadId": "l3"
-        },
-        {
-          "name": "Management Team",
-          "description": "Manages events",
-          "leadId": "l4"
-        },
-        {
-          "name": "Content Team",
-          "description": "Creates content",
-          "leadId": "l5"
+      },
+      {
+        "name": "Richa Rajput",
+        "position": "Technical Co-Lead",
+        "image": "/images/leads/techco.jpg",
+        "bgColor": "#FDDD81",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/richarajput",
+          "mail": "mailto:richarajput@example.com",
+          "twitter": "https://twitter.com/richarajput",
+          "github": "https://github.com/richarajput"
         }
-      ]
-    },
+      },
+      {
+        "name": "Abhishekh Ojha",
+        "position": "Web Dev Lead",
+        "image": "/images/leads/webdev.jpg",
+        "bgColor": "#60BE90",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/abhishekh",
+          "mail": "mailto:abhishekh@example.com",
+          "twitter": "https://twitter.com/abhishekh",
+          "github": "https://github.com/abhishekh"
+        }
+      },
+      {
+        "name": "Samyak Gupta",
+        "position": "Web3 & Blockchain Lead",
+        "image": "/images/leads/web3.jpg",
+        "bgColor": "#F4A19A",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/samyakgupta",
+          "mail": "mailto:samyakgupta@example.com",
+          "twitter": "https://twitter.com/samyakgupta",
+          "github": "https://github.com/samyakgupta"
+        }
+      },
+      {
+        "name": "Godhuli Vays",
+        "position": "Chapter Lead",
+        "image": "/images/leads/chapter.jpg",
+        "bgColor": "#FFC0CB",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/godhuli",
+          "mail": "mailto:godhuli@example.com",
+          "twitter": "https://twitter.com/godhuli",
+          "github": "https://github.com/godhuli"
+        }
+      },
+      {
+        "name": "Aryan Karma",
+        "position": "Technical Lead",
+        "image": "/images/leads/technical.jpg",
+        "bgColor": "#A0C2F9",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/aryankarma",
+          "mail": "mailto:aryankarma@example.com",
+          "twitter": "https://twitter.com/aryankarma",
+          "github": "https://github.com/aryankarma"
+        }
+      },
+      {
+        "name": "Richa Rajput",
+        "position": "Technical Co-Lead",
+        "image": "/images/leads/techco.jpg",
+        "bgColor": "#FDDD81",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/richarajput",
+          "mail": "mailto:richarajput@example.com",
+          "twitter": "https://twitter.com/richarajput",
+          "github": "https://github.com/richarajput"
+        }
+      },
+      {
+        "name": "Abhishekh Ojha",
+        "position": "Web Dev Lead",
+        "image": "/images/leads/webdev.jpg",
+        "bgColor": "#60BE90",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/abhishekh",
+          "mail": "mailto:abhishekh@example.com",
+          "twitter": "https://twitter.com/abhishekh",
+          "github": "https://github.com/abhishekh"
+        }
+      },
+      {
+        "name": "Samyak Gupta",
+        "position": "Web3 & Blockchain Lead",
+        "image": "/images/leads/web3.jpg",
+        "bgColor": "#F4A19A",
+        "socialLinks": {
+          "linkedin": "https://linkedin.com/in/samyakgupta",
+          "mail": "mailto:samyakgupta@example.com",
+          "twitter": "https://twitter.com/samyakgupta",
+          "github": "https://github.com/samyakgupta"
+        }
+      }
+    ],
     "events": {
       "section_metadata": {
         "title": "Past Events: Relive the Moments",
@@ -123,63 +178,121 @@
       "events": {
         "event1": {
           "id": "e1",
-          "title": "Event Title",
-          "description": "Event Description",
-          "date": "2025-03-15",
-          "image": "event_image_url",
-          "type": "workshop",
-          "participants": "120+"
-        }
-      }
-    },
-    "partners": {
-      "bizthon": {
-        "id": "p1",
-        "name": "BizThon",
-        "logo": "bizthon_logo_url",
-        "website": "bizthon_website_url"
-      },
-      "devlabs": {
-        "id": "p2",
-        "name": "DEVLABS",
-        "logo": "devlabs_logo_url",
-        "website": "devlabs_website_url"
-      },
-      "sunstone": {
-        "id": "p3",
-        "name": "SUNSTONE",
-        "logo": "sunstone_logo_url",
-        "website": "sunstone_website_url"
-      },
-      "code4govtech": {
-        "id": "p4",
-        "name": "CODE4GOVTECH",
-        "logo": "code4govtech_logo_url",
-        "website": "code4govtech_website_url"
-      }
-    },
-    "testimonials": {
-      "section_metadata": {
-        "title": "What Our Community Says",
-        "subtitle": "Hear from our members about their experiences, growth, and journey with GDSC-SUI",
-        "assets": {
-          "image1": "asset_image_url1"
-        }
-      },
-      "testimonials": {
-        "testimonial1": {
-          "id": "t1",
-          "name": "Georgia Anderson",
-          "userimage": "profile_image_url",
-          "quoteLogo": "url",
-          "role": "Member",
-          "descripion": "lorem ipsum"
+          "title": "Build With AI",
+          "description": "Speaker Session / Tech Talk",
+          "date": "20-02-2025",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741010722/npy3sjka5qhjd7j0agx9.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event2": {
+          "id": "e2",
+          "title": "BUILD WITH AI - Solution Challenge Project Building",
+          "description": "Workshop / Study Group",
+          "date": "03-02-2025",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741011308/Untitled_design_aNUJUqQ_okmxyh.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event3": {
+          "id": "e3",
+          "title": "Build With AI",
+          "description": "Workshop / Study Group",
+          "date": "22-01-2025",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741011370/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy_jwfpva.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event4": {
+          "id": "e4",
+          "title": "Hack Tour GDG On Campus",
+          "description": "Workshop / Study Group",
+          "date": "09-01-2025",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741011370/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy_jwfpva.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event5": {
+          "id": "e5",
+          "title": "Winter of Code 4.0 Info Session",
+          "description": "Info session",
+          "date": "28-12-2024",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741011442/woc_logo_n3uGFjk_liy5ge.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event6": {
+          "id": "e6",
+          "title": "Tech Winter Break + GDG On Campus Amity University Noida",
+          "description": "Workshop / Study Group",
+          "date": "23-12-2024",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741011479/Group_110_tJOfnkG_zqbkko.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event7": {
+          "id": "e7",
+          "title": "Tech Winter break - GDG On Campus Sage University Indore",
+          "description": "Workshop / Study Group",
+          "date": "18-12-2024",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741013040/Tech_Winter_break_1__bPQd9IT_m0rbwl.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event8": {
+          "id": "e8",
+          "title": "Tech Winter Break- GDG On Campus Sage university Indore",
+          "description": "Workshop / Study Group",
+          "date": "14-12-2024",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741013122/business_webinar_zXG3gBz_kknrsh.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event9": {
+          "id": "e9",
+          "title": "Keeping Data Safe: The Go Lacil Revolution",
+          "description": "Speaker Session / Tech Talk",
+          "date": "13-12-2024",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741013163/GO_LAADLI_2__7RreJie_fjaqfa.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event10": {
+          "id": "e10",
+          "title": "Tech Winter Break - HTML, CSS, JS, Git/Github session",
+          "description": "Workshop / Study Group",
+          "date": "07-12-2024",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741011370/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy_jwfpva.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event11": {
+          "id": "e11",
+          "title": "Orientation Day",
+          "description": "Info session",
+          "date": "29-11-2024",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741013359/Screenshot_2024-12-08_010508_IHEOEVC_ci6nvp.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event12": {
+          "id": "e12",
+          "title": "Open source Contribution in Government Technologies",
+          "description": "Speaker Session / Tech Talk",
+          "date": "28-10-2024",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741011370/gdev-eccosystems-bevy-chapters-thumbnail_x4z1EBy_jwfpva.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event13": {
+          "id": "e13",
+          "title": "Build With AI Expert session",
+          "description": "Speaker Session / Tech Talk",
+          "date": "26-10-2024",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741013418/Thumbnail_Build_with_AI_Session_BAPc9rF_baajfu.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
+        },
+        "event14": {
+          "id": "e14",
+          "title": "Robotics Workshop In collaboration with Sage GDG X IIT Bombay X Youngcvator",
+          "description": "Workshop / Study Group",
+          "date": "24-09-2024",
+          "image": "https://res.cloudinary.com/dhbbjqlij/image/upload/v1741013478/Mr._Mudit_Thakar_qEKm5bf_ncdmjx.webp",
+          "venue": "GDG on Campus SAGE University - Indore, India"
         }
       }
     },
     "BePart": {
       "title": "Be a Part of GDSC-SUI",
-      "description": "Connect, learn, and grow with a community of developers passionate about technology and innovation..",
+      "description": "Connect, learn, and grow with a community of developers passionate about technology and innovation.",
       "cta": "Join Us",
       "assets": {
         "image1": "asset_image_url1"
