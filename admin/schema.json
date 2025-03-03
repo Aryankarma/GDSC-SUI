@@ -290,6 +290,120 @@
         }
       }
     },
+    "testimonials": {
+      "section_metadata": {
+        "title": "What Our Community Says",
+        "subtitle": "Hear from our members about their experiences, growth, and journey with GDSC-SUI.",
+        "cta": "Testimonials"
+      },
+      "items": [
+        {
+          "name": "Sophia Bennett",
+          "role": "Premium Member",
+          "img": "https://picsum.photos/50/50",
+          "testimonial": "This platform has truly changed the way I approach learning. The interactive challenges keep me engaged, and I've seen a huge improvement in my skills!"
+        },
+        {
+          "name": "Liam Carter",
+          "role": "Verified User",
+          "img": "https://picsum.photos/50/50",
+          "testimonial": "The interface is clean, the challenges are well-structured, and the community is incredibly supportive. Highly recommend to anyone looking to upskill!"
+        },
+        {
+          "name": "Olivia Mitchell",
+          "role": "Pro Member",
+          "img": "https://picsum.photos/50/50",
+          "testimonial": "I love how easy it is to track my progress. The leaderboard adds a competitive edge that makes learning even more fun!"
+        },
+        {
+          "name": "Ethan Rogers",
+          "role": "Community Member",
+          "img": "https://picsum.photos/50/50",
+          "testimonial": "The AI-driven profile matcher helped me find the perfect learning path. It's like having a personal mentor guiding me through my journey."
+        },
+        {
+          "name": "Amelia Johnson",
+          "role": "Elite Member",
+          "img": "https://picsum.photos/50/50",
+          "testimonial": "I've tried many learning platforms, but this one stands out with its interactive coding challenges and instant feedback."
+        },
+        {
+          "name": "Noah Williams",
+          "role": "Tech Enthusiast",
+          "img": "https://picsum.photos/50/50",
+          "testimonial": "The Telegram bot integration makes it super easy to stay on track. I can practice challenges on the go!"
+        },
+        {
+          "name": "Isabella Clark",
+          "role": "Scholarship Winner",
+          "img": "https://picsum.photos/50/50",
+          "testimonial": "Thanks to this platform, I found the right scholarship and aced my application. The AI suggestions were spot on!"
+        },
+        {
+          "name": "Mason Baker",
+          "role": "Startup Founder",
+          "img": "https://picsum.photos/50/50",
+          "testimonial": "A game-changer for skill development. The coding challenges helped me sharpen my problem-solving skills, which I now use in my startup."
+        },
+        {
+          "name": "Emily Davis",
+          "role": "Aspiring Developer",
+          "img": "https://picsum.photos/50/50",
+          "testimonial": "The structured learning path made it easy to transition from beginner to intermediate. I feel more confident in my coding abilities!"
+        },
+        {
+          "name": "James Thompson",
+          "role": "Data Science Enthusiast",
+          "img": "https://picsum.photos/50/50",
+          "testimonial": "The hands-on approach is what I love most. The platform makes learning feel natural and fun!"
+        },
+        {
+          "name": "Charlotte Evans",
+          "role": "Freelance Developer",
+          "img": "https://picsum.photos/50/50",
+          "testimonial": "As a freelancer, staying updated is crucial. This platform helps me stay ahead of industry trends effortlessly."
+        },
+        {
+          "name": "Benjamin Wilson",
+          "role": "Cybersecurity Student",
+          "img": "https://picsum.photos/50/50",
+          "testimonial": "The security challenges were really eye-opening. I got hands-on experience solving real-world cybersecurity problems."
+        }
+      ],
+      "assets": {
+        "quoteImage": "/logos/testomonialquote.png",
+        "blueAccent": "/logos/testimonialassetblue.png",
+        "yellowAccent": "/logos/testimonialassetyellow.png"
+      }
+    },
+    "partners": {
+      "section_metadata": {
+        "title": "Our Partners",
+        "subtitle": "Collaborating with industry leaders to bring you the best opportunities"
+      },
+      "items": [
+        {
+          "name": "BIZTHON",
+          "img": "/logos/sunstonelogo.png",
+          "url": "https://google.com"
+        },
+        {
+          "name": "DEVLABS",
+          "img": "/logos/sunstonelogo.png",
+          "url": "https://google.com"
+        },
+        {
+          "name": "SUNSTONE",
+          "img": "/logos/sunstonelogo.png",
+          "url": "https://google.com"
+        },
+        {
+          "name": "CODE4GOVTECH",
+          "img": "/logos/sunstonelogo.png",
+          "url": "https://google.com"
+        }
+      ]
+    },
     "BePart": {
       "title": "Be a Part of GDSC-SUI",
       "description": "Connect, learn, and grow with a community of developers passionate about technology and innovation.",
