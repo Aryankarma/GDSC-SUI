@@ -11,6 +11,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { BlurFade } from "./magicui/blur-fade";
+
 
 const teamMembers = [
   {
@@ -156,8 +158,9 @@ const Team = () => {
               builders driving GDSC-SUI forward.
             </p>
           </div>
-
+          <BlurFade delay={0.35} inView>
           <div className="cards">
+
             <Carousel
               className="w-[86.5vw] mb-20"
               plugins={[plugin.current]}
@@ -215,6 +218,8 @@ const Team = () => {
               <CarouselNext />
             </Carousel>
           </div>
+          </BlurFade>
+
         </div>
       </div>
     </div>

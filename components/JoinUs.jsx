@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import { BlurFade } from "./magicui/blur-fade";
 
 const JoinUs = () => {
   return (
@@ -14,6 +13,8 @@ const JoinUs = () => {
       <img src="/images/red circles.svg" alt="Red Circles" className=" scale-[.4] md:scale-100 absolute bottom-10 right-20 w-30" />
 
       {/* Main Content */}
+      <BlurFade delay={0.35} inView>
+
       <div className="text-center z-10">
         <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
           Be Part of GDSC–SUI!
@@ -25,6 +26,8 @@ const JoinUs = () => {
           Join Us Now
         </button>
       </div>
+      </BlurFade>
+
     </section>
   );
 };

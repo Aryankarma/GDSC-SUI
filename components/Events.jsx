@@ -12,6 +12,8 @@ import {
 import { Calendar, Users } from "lucide-react";
 import { InteractiveGridPattern } from "./magicui/interactive-grid-pattern";
 import { cn } from "@/lib/utils";
+import { TextReveal } from "./magicui/text-reveal";
+import { BlurFade } from "./magicui/blur-fade";
 
 const data = [
   {
@@ -107,47 +109,49 @@ function Events() {
         />
       </div>
 
+          <BlurFade delay={0.35} inView>
       <Carousel className="w-[70vw] md:w-[85vw]">
         <CarouselContent>
           {data.map((item, index) => (
-            <CarouselItem
-              key={index}
-              className="flex sm:basis-1/2 md:basis-1/3 flex-col items-center md:gap-2 md:p-4"
-            >
-              <div className="w-full rounded-3xl border border-black/50 p-4 py-6 md:gap-2 flex flex-col hover:bg-[#F1F6FF] md:transition-transform duration-300 md:hover:translate-x-1 md:hover:translate-y-1 md:hover:shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-                <div className="flex items-center gap-2 justify-between text-xs text-gray-500">
-                  <span className="px-3 py-1 border hidden md:flex border-black/50 p-1 rounded-full">
-                    {item.category}
-                  </span>
-                  <span className="flex items-center gap-1 border border-black/50 p-1 px-2 rounded-full">
-                    <Calendar size={14} />
-                    {item.date}
-                  </span>
-                  <span className="flex items-center gap-1 border border-black/50  p-1 px-2 rounded-full">
-                    <Users size={14} />
-                    {item.participants}
-                  </span>
+              <CarouselItem
+                key={index}
+                className="flex sm:basis-1/2 md:basis-1/3 flex-col items-center md:gap-2 md:p-4"
+              >
+                <div className="w-full rounded-3xl border border-black/50 p-4 py-6 md:gap-2 flex flex-col hover:bg-[#F1F6FF] md:transition-transform duration-300 md:hover:translate-x-1 md:hover:translate-y-1 md:hover:shadow-[8px_8px_0px_rgba(0,0,0,1)]">
+                  <div className="flex items-center gap-2 justify-between text-xs text-gray-500">
+                    <span className="px-3 py-1 border hidden md:flex border-black/50 p-1 rounded-full">
+                      {item.category}
+                    </span>
+                    <span className="flex items-center gap-1 border border-black/50 p-1 px-2 rounded-full">
+                      <Calendar size={14} />
+                      {item.date}
+                    </span>
+                    <span className="flex items-center gap-1 border border-black/50  p-1 px-2 rounded-full">
+                      <Users size={14} />
+                      {item.participants}
+                    </span>
+                  </div>
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={400}
+                    height={250}
+                    className="mt-3 rounded-2xl border border-black/50"
+                  />
+                  <h3 className="mt-2 text-lg text-start font-semibold">
+                    {item.title.slice(0, 30) + "..."}
+                  </h3>
+                  <p className="text-sm text-gray-500 text-start">
+                    {item.description.slice(0, 125) + "..."}
+                  </p>
                 </div>
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  width={400}
-                  height={250}
-                  className="mt-3 rounded-2xl border border-black/50"
-                />
-                <h3 className="mt-2 text-lg text-start font-semibold">
-                  {item.title.slice(0, 30) + "..."}
-                </h3>
-                <p className="text-sm text-gray-500 text-start">
-                  {item.description.slice(0, 125) + "..."}
-                </p>
-              </div>
-            </CarouselItem>
+              </CarouselItem>
           ))}
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+            </BlurFade>
     </div>
   );
 }

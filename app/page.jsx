@@ -10,21 +10,40 @@ import Team from "../components/Team";
 import Footer from "../components/Footer";
 import { cn } from "@/lib/utils";
 import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
+import { BlurFade } from "@/components/magicui/blur-fade";
 
 export default function Home() {
   return (
     <div className="flex relative flex-col h-full">
       <div className="flex  flex-col h-full gap-24 md:gap-32">
-        <HeroSection />
-        <Gallery />
-        <OurPartners />
-        <Events />
-        <Testimonials />
-        <Team />
+        <BlurFade delay={0.25} inView>
+          <HeroSection />
+        </BlurFade>
+        <BlurFade delay={0.25} inView>
+          <Gallery />
+        </BlurFade>
+        <BlurFade delay={0.25} inView>
+          <OurPartners />
+        </BlurFade>
+        <BlurFade delay={0.25} inView>
+          <Events />
+        </BlurFade>
+        <BlurFade delay={0.25} inView>
+          <Testimonials />
+        </BlurFade>
+        <BlurFade delay={0.25} inView>
+          <Team />
+        </BlurFade>
       </div>
-      <JoinUs />
-      <ContactUs />
-      <Footer />
+      <BlurFade delay={0.25} inView>
+        <JoinUs />
+      </BlurFade>
+      <BlurFade delay={0.25} inView>
+        <ContactUs />
+      </BlurFade>
+      <BlurFade delay={0.25} inView>
+        <Footer />
+      </BlurFade>
     </div>
   );
 }

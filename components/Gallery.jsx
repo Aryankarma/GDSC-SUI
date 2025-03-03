@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "./magicui/marquee";
 import { GridPattern } from "./magicui/grid-pattern";
+import { BlurFade } from "./magicui/blur-fade";
 
 const reviews = [
   {
@@ -39,10 +40,12 @@ const ReviewCard = ({ img }) => {
       )}
     >
       <div className="flex">
-        <img
-          className="hover:scale-[.99] transition-all rounded-[1.15rem] md:rounded-[3.25rem]"
-          src={img}
-        />
+        <BlurFade delay={0.25} inView>
+          <img
+            className="hover:scale-[.99] transition-all rounded-[1.15rem] md:rounded-[3.25rem]"
+            src={img}
+          />
+        </BlurFade>
       </div>
     </figure>
   );

@@ -5,6 +5,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { Marquee } from "./magicui/marquee3";
 import { InteractiveGridPattern } from "./magicui/interactive-grid-pattern";
+import { BlurFade } from "./magicui/blur-fade";
 
 export const testimonials = [
   {
@@ -159,28 +160,32 @@ function Testimonials() {
         />
       </div>
       <div className="flex flex-col gap-2 scale-90 md:scale-100">
+          <BlurFade  delay={0.35} inView>
         <Marquee pauseOnHover className="[--duration:75s]">
           {firstRow.map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              img={testimonial.img}
-              name={testimonial.name}
-              position={testimonial.role}
-              description={testimonial.testimonial}
-            />
-          ))}
+              <TestimonialCard
+                key={index}
+                img={testimonial.img}
+                name={testimonial.name}
+                position={testimonial.role}
+                description={testimonial.testimonial}
+              />
+            ))}
         </Marquee>
+            </BlurFade>
+          <BlurFade  delay={0.5} inView>
         <Marquee reverse pauseOnHover className="[--duration:75s]">
           {secondRow.map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              img={testimonial.img}
-              name={testimonial.name}
-              position={testimonial.role}
-              description={testimonial.testimonial}
-            />
-          ))}
+              <TestimonialCard
+                key={index}
+                img={testimonial.img}
+                name={testimonial.name}
+                position={testimonial.role}
+                description={testimonial.testimonial}
+              />
+            ))}
         </Marquee>
+            </BlurFade>
       </div>
     </div>
   );

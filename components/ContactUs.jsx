@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Dock, DockIcon } from "./magicui/dockoriginal";
+import { BlurFade } from "./magicui/blur-fade";
 
 const firstImg = "/images/Frame1.svg";
 const secondImg = "/images/Frame2.svg";
@@ -12,6 +13,7 @@ const linkedin = "/images/linkedin.svg";
 const facebook = "/images/Facebook.svg";
 const whatsapp = "/images/Whatsapp.svg";
 const mail = "/images/Mail.svg";
+
 
 const ContactUs = () => {
   return (
@@ -29,7 +31,7 @@ const ContactUs = () => {
         </p>
       </div>
 
-      {/* Cards Section */}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md;gap-10 mt-4 ">
         <Card
           icon={firstImg}
@@ -47,6 +49,7 @@ const ContactUs = () => {
           description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         />
       </div>
+
 
       {/* Social Media Links */}
       <div className="mt-8 flex flex-col items-center">

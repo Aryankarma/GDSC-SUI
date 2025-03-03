@@ -2,6 +2,7 @@ import { Marquee } from "./magicui/marquee";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { InteractiveGridPattern } from "./magicui/interactive-grid-pattern";
+import { BlurFade } from "./magicui/blur-fade";
 
 const partners = [
   {
@@ -59,14 +60,16 @@ const ReviewCard = ({ img, name, url }) => {
 
 function Gallery() {
   return (
-    <div className="relative flex h-auto w-full flex-col gap-4 items-center justify-center overflow-hidden">
-      <h1>Our Partners</h1>
-      <Marquee pauseOnHover className="[--duration:40s] ">
-        {partners.map((review, index) => (
-          <ReviewCard key={index} {...review} />
-        ))}
-      </Marquee>
-    </div>
+    <BlurFade delay={0.25} inView>
+      <div className="relative flex h-auto w-full flex-col gap-4 items-center justify-center overflow-hidden">
+        <h1>Our Partners</h1>
+        <Marquee pauseOnHover className="[--duration:40s] ">
+          {partners.map((review, index) => (
+            <ReviewCard key={index} {...review} />
+          ))}
+        </Marquee>
+      </div>
+    </BlurFade>
   );
 }
 
