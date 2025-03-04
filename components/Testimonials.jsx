@@ -1,100 +1,63 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
-import { cn } from "@/lib/utils";
+import React, {useState} from "react";
 import { Marquee } from "./magicui/marquee3";
-import { InteractiveGridPattern } from "./magicui/interactive-grid-pattern";
 import { BlurFade } from "./magicui/blur-fade";
 
 export const testimonials = [
   {
-    name: "Sophia Bennett",
-    role: "Premium Member",
-    img: "https://picsum.photos/50/50",
-    testimonial:
-      "This platform has truly changed the way I approach learning. The interactive challenges keep me engaged, and I’ve seen a huge improvement in my skills!",
+    "name": "Anonymous",
+    "role": "Community Member",
+    "img": "https://picsum.photos/50/50",
+    "testimonial": "I am proud of our progress and excited for what we will achieve together. Let’s keep up the momentum and continue making a difference!"
   },
   {
-    name: "Liam Carter",
-    role: "Verified User",
-    img: "https://picsum.photos/50/50",
-    testimonial:
-      "The interface is clean, the challenges are well-structured, and the community is incredibly supportive. Highly recommend to anyone looking to upskill!",
+    "name": "Anonymous",
+    "role": "Event Attendee",
+    "img": "https://picsum.photos/50/50",
+    "testimonial": "Build with AI Day 1 was interesting! Got to know more about trends and some amazing tools. Looking forward to the next session."
   },
   {
-    name: "Olivia Mitchell",
-    role: "Pro Member",
-    img: "https://picsum.photos/50/50",
-    testimonial:
-      "I love how easy it is to track my progress. The leaderboard adds a competitive edge that makes learning even more fun!",
+    "name": "Anonymous",
+    "role": "Active Member",
+    "img": "https://picsum.photos/50/50",
+    "testimonial": "The GDG orientation was amazing! I got to learn more about GDG, meet the lead members, and build connections. Thank you for making me a part of this!"
   },
   {
-    name: "Ethan Rogers",
-    role: "Community Member",
-    img: "https://picsum.photos/50/50",
-    testimonial:
-      "The AI-driven profile matcher helped me find the perfect learning path. It’s like having a personal mentor guiding me through my journey.",
+    "name": "Anonymous",
+    "role": "New Member",
+    "img": "https://picsum.photos/50/50",
+    "testimonial": "When I joined college, I was looking for a platform to improve my skills and knowledge. GDG has given me exactly that! I am excited to learn more."
   },
   {
-    name: "Amelia Johnson",
-    role: "Elite Member",
-    img: "https://picsum.photos/50/50",
-    testimonial:
-      "I’ve tried many learning platforms, but this one stands out with its interactive coding challenges and instant feedback.",
+    "name": "Anonymous",
+    "role": "Tech Enthusiast",
+    "img": "https://picsum.photos/50/50",
+    "testimonial": "Good leadership ability, decision-making skills, and management! The team is doing a great job."
   },
   {
-    name: "Noah Williams",
-    role: "Tech Enthusiast",
-    img: "https://picsum.photos/50/50",
-    testimonial:
-      "The Telegram bot integration makes it super easy to stay on track. I can practice challenges on the go!",
+    "name": "Anonymous",
+    "role": "Excited Learner",
+    "img": "https://picsum.photos/50/50",
+    "testimonial": "Great time today at the orientation. The team leads are awesome, and I loved interacting with everyone!"
   },
   {
-    name: "Isabella Clark",
-    role: "Scholarship Winner",
-    img: "https://picsum.photos/50/50",
-    testimonial:
-      "Thanks to this platform, I found the right scholarship and aced my application. The AI suggestions were spot on!",
+    "name": "Anonymous",
+    "role": "First-Year Student",
+    "img": "https://picsum.photos/50/50",
+    "testimonial": "Honestly, as a first-year student, I’ve seen the efforts the leaders put in. Managing everything at once is tough, but they are doing an incredible job!"
   },
   {
-    name: "Mason Baker",
-    role: "Startup Founder",
-    img: "https://picsum.photos/50/50",
-    testimonial:
-      "A game-changer for skill development. The coding challenges helped me sharpen my problem-solving skills, which I now use in my startup.",
-  },
-  {
-    name: "Emily Davis",
-    role: "Aspiring Developer",
-    img: "https://picsum.photos/50/50",
-    testimonial:
-      "The structured learning path made it easy to transition from beginner to intermediate. I feel more confident in my coding abilities!",
-  },
-  {
-    name: "James Thompson",
-    role: "Data Science Enthusiast",
-    img: "https://picsum.photos/50/50",
-    testimonial:
-      "The hands-on approach is what I love most. The platform makes learning feel natural and fun!",
-  },
-  {
-    name: "Charlotte Evans",
-    role: "Freelance Developer",
-    img: "https://picsum.photos/50/50",
-    testimonial:
-      "As a freelancer, staying updated is crucial. This platform helps me stay ahead of industry trends effortlessly.",
-  },
-  {
-    name: "Benjamin Wilson",
-    role: "Cybersecurity Student",
-    img: "https://picsum.photos/50/50",
-    testimonial:
-      "The security challenges were really eye-opening. I got hands-on experience solving real-world cybersecurity problems.",
-  },
+    "name": "Anonymous",
+    "role": "GDG Member",
+    "img": "https://picsum.photos/50/50",
+    "testimonial": "Everyone here is so sweet! Special appreciation to the technical team lead and the chapter lead. It’s fun to be part of GDG, and I’d love to have more regular meetings!"
+  }
 ];
 
 function TestimonialCard({ img, name, position, description }) {
+  const [showAll, setShowAll] = useState(false)
   return (
     <div className="max-w-xs md:max-w-sm p-3 md:p-5 flex flex-col gap-6 rounded-3xl hover:shadow-md transition-all border relative">
       <div className="flex items-center space-x-3">
@@ -118,8 +81,8 @@ function TestimonialCard({ img, name, position, description }) {
           className="absolute top-[33%] left-[40%]"
         />
         <p className="text-gray-600 italic mt-2">
-          {description.slice(0, 150) + "..."}
-          <span className="text-blue-500 cursor-pointer ml-2">see more</span>
+          {showAll ? description : description.slice(0, 150) + "..."}
+          <span onClick={()=> {setShowAll(!showAll)}} className={`text-blue-500 cursor-pointer ml-2 ${showAll ? 'hidden' : ""}`}>see more</span>
         </p>
       </div>
     </div>
@@ -128,7 +91,7 @@ function TestimonialCard({ img, name, position, description }) {
 
 const firstRow = testimonials.slice(0, testimonials.length / 3);
 const secondRow = testimonials.slice(testimonials.length / 3);
-const thirdRow = testimonials.slice(testimonials.length / 3);
+// const thirdRow = testimonials.slice(testimonials.length / 3);
 
 function Testimonials() {
   return (
@@ -160,7 +123,7 @@ function Testimonials() {
         />
       </div>
       <div className="flex flex-col gap-2 scale-90 md:scale-100">
-          <BlurFade  delay={0.35} inView>
+          <BlurFade  delay={0.16} inView>
         <Marquee pauseOnHover className="[--duration:75s]">
           {firstRow.map((testimonial, index) => (
               <TestimonialCard

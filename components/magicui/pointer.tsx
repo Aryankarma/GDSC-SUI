@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion, useMotionValue } from "motion/react";
+import { AnimatePresence, motion, MotionValue, useMotionValue } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 
 /**
@@ -23,8 +23,8 @@ export function PointerWrapper({
   className,
   ...props
 }: PointerWrapperProps) {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
+  const x = useMotionValue<number>(0);
+  const y = useMotionValue<number>(0);
 
   const ref = useRef<HTMLDivElement>(null);
   const [rect, setRect] = useState<DOMRect | null>(null);
@@ -86,8 +86,8 @@ export function PointerWrapper({
  * @property {MotionValue<number>} y - The y-coordinate position of the pointer
  */
 interface PointerProps {
-  x: any;
-  y: any;
+  x: MotionValue<number>;
+  y: MotionValue<number>;
 }
 
 /**

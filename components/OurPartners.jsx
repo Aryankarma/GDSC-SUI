@@ -1,29 +1,28 @@
 import { Marquee } from "./magicui/marquee";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { InteractiveGridPattern } from "./magicui/interactive-grid-pattern";
 import { BlurFade } from "./magicui/blur-fade";
 
 const partners = [
   {
-    name: "BIZTHON",
-    img: "/logos/sunstonelogo.png",
-    url: "https://google.com",
+    name: "DEVLABS",
+    img: "/logos/devlabslogo.png",
+    url: "https://discord.gg/tmPmvFqnUJ",
   },
   {
-    name: "DEVLABS",
-    img: "/logos/sunstonelogo.png",
-    url: "https://google.com",
+    name: "CODEFORGOVTECH",
+    img: "/logos/xyz.png",
+    url: "https://codeforgovtech.in",
   },
   {
     name: "SUNSTONE",
     img: "/logos/sunstonelogo.png",
-    url: "https://google.com",
+    url: "https://sunstone.in/",
   },
   {
-    name: "CODE4GOVTECH",
-    img: "/logos/sunstonelogo.png",
-    url: "https://google.com",
+    name: "BIZTHON",
+    img: "/logos/bizthon.png",
+    url: "",
   },
 ];
 
@@ -45,7 +44,7 @@ const ReviewCard = ({ img, name, url }) => {
       /> */}
       <div className="flex gap-2 items-center justify-center align-center">
         <Link href={url} className="">
-          <img className="h-6 " src={img} />
+          <img className="h-7 w-[100%] opacity-75" src={img} />
         </Link>
         <h1
           className="text-[#11111185] m-0 text-xl md:text-3xl flex justify-center"
@@ -60,7 +59,7 @@ const ReviewCard = ({ img, name, url }) => {
 
 function Gallery() {
   return (
-    <BlurFade delay={0.25} inView>
+    <BlurFade delay={0.16} inView>
       <div className="relative flex h-auto w-full flex-col gap-4 items-center justify-center overflow-hidden">
         <h1>Our Partners</h1>
         <Marquee pauseOnHover className="[--duration:40s] ">

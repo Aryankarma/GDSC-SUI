@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Dock, DockIcon } from "./magicui/dockoriginal";
-import { BlurFade } from "./magicui/blur-fade";
 
 const firstImg = "/images/Frame1.svg";
 const secondImg = "/images/Frame2.svg";
@@ -17,7 +16,7 @@ const mail = "/images/Mail.svg";
 
 const ContactUs = () => {
   return (
-    <section className="bg-[#181817] text-white py-16 px-4 flex flex-col items-center">
+    <section id="contact" className="bg-[#181817] text-white py-16 px-4 flex flex-col items-center">
       <div className="py-10 px-4 flex flex-col items-center relative">
         <button className="bg-[#361715] hover:bg-[#5f2824] transition border border-[#EA4335] px-6 py-1 rounded-full mb-8 text-sm md:text-base">
           Contact

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./TeamStyles.css";
 import Link from "next/link";
 import { Dock, DockIcon } from "./magicui/dock";
@@ -13,129 +13,129 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { BlurFade } from "./magicui/blur-fade";
 
-
 const teamMembers = [
   {
-    name: "Godhuli Vays",
+    name: "Godhuli Vyas",
     position: "Chapter Lead",
-    image: "/images/leads/chapter.jpg",
+    image: "/team/godhuliVyas.png",
     bgColor: "#FFC0CB",
     socialLinks: {
-      linkedin: "https://linkedin.com/in/godhuli",
-      mail: "mailto:godhuli@example.com",
-      twitter: "https://twitter.com/godhuli",
-      github: "https://github.com/godhuli",
+      linkedin: "https://www.linkedin.com/in/godhuli-vyas-4b7128253",
+      github: "https://github.com/godhulivyas",
+      mail: "mailto:godhulivyas@gmail.com",
+      twitter: "",
     },
-  },
-  {
+  },{
     name: "Aryan Karma",
     position: "Technical Lead",
-    image: "/images/leads/technical.jpg",
+    image: "/team/aryankarma.png",
     bgColor: "#A0C2F9",
     socialLinks: {
-      linkedin: "https://linkedin.com/in/aryankarma",
-      mail: "mailto:aryankarma@example.com",
-      twitter: "https://twitter.com/aryankarma",
+      linkedin: "https://www.linkedin.com/in/aryankarma",
       github: "https://github.com/aryankarma",
+      mail: "mailto:aryankarma29@gmail.com",
+      twitter: "https://x.com/karmaaryn",
     },
   },
   {
-    name: "Richa Rajput",
-    position: "Technical Co-Lead",
-    image: "/images/leads/techco.jpg",
+    name: "Aditya Kumar Junwal",
+    position: "Event Lead",
+    image: "/team/adityaJunwal.png",
+    bgColor: "#FFC0CB",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/aditya-kumar-junwal-66aa77184",
+      github: "https://github.com/adityajunwal",
+      mail: "mailto:adityakjunwal@gmail.com",
+      twitter: "https://x.com/adityajunwal",
+    },
+  },
+  {
+    name: "Prem Panchal",
+    position: "Videography Lead",
+    image: "/team/premPanchal.png",
+    bgColor: "#A0C2F9",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/prem-panchal-90a844300",
+      github: "https://github.com/developerhumain",
+      mail: "mailto:panchalprem0501@gmail.com",
+      twitter: "https://x.com/IAMPREMPXNCHAL?t=yV3vKiyjWOsqtrzCCVc2qw&s=09",
+    },
+  },
+  {
+    name: "Muskan Wagh",
+    position: "Sponsorship Co-Lead",
+    image: "/team/muskanWagh.png",
     bgColor: "#FDDD81",
     socialLinks: {
-      linkedin: "https://linkedin.com/in/richarajput",
-      mail: "mailto:richarajput@example.com",
-      twitter: "https://twitter.com/richarajput",
-      github: "https://github.com/richarajput",
-    },
-  },
-  {
-    name: "Abhishekh Ojha",
-    position: "Web Dev Lead",
-    image: "/images/leads/webdev.jpg",
-    bgColor: "#60BE90",
-    socialLinks: {
-      linkedin: "https://linkedin.com/in/abhishekh",
-      mail: "mailto:abhishekh@example.com",
-      twitter: "https://twitter.com/abhishekh",
-      github: "https://github.com/abhishekh",
+      linkedin: "https://www.linkedin.com/in/muskan-wagh-22b2b5325",
+      github: "",
+      mail: "mailto:",
+      twitter: "",
     },
   },
   {
     name: "Samyak Gupta",
-    position: "Web3 & Blockchain Lead",
-    image: "/images/leads/web3.jpg",
-    bgColor: "#F4A19A",
-    socialLinks: {
-      linkedin: "https://linkedin.com/in/samyakgupta",
-      mail: "mailto:samyakgupta@example.com",
-      twitter: "https://twitter.com/samyakgupta",
-      github: "https://github.com/samyakgupta",
-    },
-  },
-  {
-    name: "Godhuli Vays",
-    position: "Chapter Lead",
-    image: "/images/leads/chapter.jpg",
-    bgColor: "#FFC0CB",
-    socialLinks: {
-      linkedin: "https://linkedin.com/in/godhuli",
-      mail: "mailto:godhuli@example.com",
-      twitter: "https://twitter.com/godhuli",
-      github: "https://github.com/godhuli",
-    },
-  },
-  {
-    name: "Aryan Karma",
-    position: "Technical Lead",
-    image: "/images/leads/technical.jpg",
-    bgColor: "#A0C2F9",
-    socialLinks: {
-      linkedin: "https://linkedin.com/in/aryankarma",
-      mail: "mailto:aryankarma@example.com",
-      twitter: "https://twitter.com/aryankarma",
-      github: "https://github.com/aryankarma",
-    },
-  },
-  {
-    name: "Richa Rajput",
-    position: "Technical Co-Lead",
-    image: "/images/leads/techco.jpg",
-    bgColor: "#FDDD81",
-    socialLinks: {
-      linkedin: "https://linkedin.com/in/richarajput",
-      mail: "mailto:richarajput@example.com",
-      twitter: "https://twitter.com/richarajput",
-      github: "https://github.com/richarajput",
-    },
-  },
-  {
-    name: "Abhishekh Ojha",
-    position: "Web Dev Lead",
-    image: "/images/leads/webdev.jpg",
+    position: "Technical Web3 Lead",
+    image: "/team/samyakGupta.png",
     bgColor: "#60BE90",
     socialLinks: {
-      linkedin: "https://linkedin.com/in/abhishekh",
-      mail: "mailto:abhishekh@example.com",
-      twitter: "https://twitter.com/abhishekh",
-      github: "https://github.com/abhishekh",
+      linkedin: "https://linkedin.com/in/samyakzer0",
+      github: "https://github.com/samyakzer0",
+      mail: "mailto:samyak.sage@gmail.com",
+      twitter: "https://x.com/samyceo",
     },
   },
   {
-    name: "Samyak Gupta",
-    position: "Web3 & Blockchain Lead",
-    image: "/images/leads/web3.jpg",
+    name: "Saurish Sagar",
+    position: "Web Dev Co-Lead",
+    image: "/team/saurishSagar.png",
     bgColor: "#F4A19A",
     socialLinks: {
-      linkedin: "https://linkedin.com/in/samyakgupta",
-      mail: "mailto:samyakgupta@example.com",
-      twitter: "https://twitter.com/samyakgupta",
-      github: "https://github.com/samyakgupta",
+      linkedin: "https://www.linkedin.com/in/saurish-sagar",
+      github: "https://github.com/SaurishS",
+      mail: "mailto:",
+      twitter: "",
     },
   },
+  {
+    name: "Yashkirti Tomar",
+    position: "Content Team Lead",
+    image: "/team/yashkirtiTomar.png",
+    bgColor: "#A0C2F9",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/yashkirti-tomar-17ba08297",
+      github: "https://github.com/yashkirtitomar",
+      mail: "mailto:btech22.yashkirti.tomar@sunstone.edu.in",
+      twitter: "",
+    },
+  },
+  {
+    name: "Omjee Pandey",
+    position: "App Development Lead",
+    image: "/team/omjeePandey.png",
+    bgColor: "#FFC0CB",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/omjee-pandey-31800533a",
+      github: "https://github.com/omjee-pandey",
+      mail: "mailto:omjee.pandey2506@gmail.com",
+      twitter: "",
+
+    },
+  },
+  {
+    name: "Ishika Keshanya",
+    position: "Community Lead",
+    image: "/team/ishikaKeshanya.png",
+    bgColor: "#FDDD81",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/ishika-keshanya-93237a268",
+      github: "",
+      mail: "mailto:ishikakeshanya@gmail.com",
+      twitter: ""
+    },
+  }
 ];
+
 
 const Team = () => {
   const plugin = React.useRef(
@@ -143,7 +143,7 @@ const Team = () => {
   );
 
   return (
-    <div className="body z-[20] ">
+    <div id="team" className="body z-[20] ">
       <div className="teamsframe pt-10 ">
         <div className="content w-[75vw] md:w-full">
           <div className="py-10 px-4 flex flex-col items-center relative">
@@ -158,7 +158,7 @@ const Team = () => {
               builders driving GDSC-SUI forward.
             </p>
           </div>
-          <BlurFade delay={0.35} inView>
+          <BlurFade delay={0.16} inView>
           <div className="cards">
 
             <Carousel
@@ -190,7 +190,7 @@ const Team = () => {
                           <Dock direction="top">
                             {Object.entries(member.socialLinks).map(
                               ([key, link]) => (
-                                <DockIcon key={link}>
+                                <DockIcon key={key}>
                                   <Link
                                     href={link}
                                     target="_blank"

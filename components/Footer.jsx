@@ -16,7 +16,7 @@ const Footer = () => {
           "[mask-image:radial-gradient(100px_circle_at_center,white,transparent)]] opacity-45 bottom-0 skew-y-10"
         )}
       />
-      <BlurFade delay={0.35} inView>
+      <BlurFade delay={0.16} inView>
         <div className="flex justify-center flex-col md:flex-row gap-8 md:gap-64 z-20">
           {/* Links Section */}
           <div className="flex flex-col md:items-start text-center md:text-left gap-2 justify-center items-center">
@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
       </BlurFade>
       {/* Logo Section */}
-      <BlurFade delay={0.35} inView>
+      <BlurFade delay={0.16} inView>
         <div className="mt-12 md:mt-10">
           <Image
             src="/images/GOOGLE DEVELOPER GROUP.svg"
@@ -105,7 +105,7 @@ const Footer = () => {
         </div>
       </BlurFade>
       {/* Footer Text */}{" "}
-      <BlurFade delay={0.35} inView>
+      <BlurFade delay={0.16} inView>
         <p className="mt-6 text-gray-600">Made with 💙 by GDSC SUI</p>
         <p className="text-gray-500 text-sm">
           Google Developer Group on Campus, SUI. All Rights Reserved

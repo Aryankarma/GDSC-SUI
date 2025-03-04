@@ -10,9 +10,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Calendar, Users } from "lucide-react";
-import { InteractiveGridPattern } from "./magicui/interactive-grid-pattern";
-import { cn } from "@/lib/utils";
-import { TextReveal } from "./magicui/text-reveal";
 import { BlurFade } from "./magicui/blur-fade";
 
 const data = [
@@ -83,7 +80,7 @@ const data = [
 
 function Events() {
   return (
-    <div className="h-full mx-auto w-[70vw] flex flex-col bg-transparent justify-center items-center md:w-[85vw]">
+    <div id="events" className="h-full mx-auto w-[70vw] flex flex-col bg-transparent justify-center items-center md:w-[85vw]">
       <div className="pb-10 px-0 flex flex-col items-center relative w-[85vw]">
         <button className="bg-[#BDCEE9] hover:bg-[#98a8c0] transition border border-[#4285F4] px-6 py-1 rounded-full mb-4 text-sm md:text-base">
           Events
@@ -99,17 +96,19 @@ function Events() {
           src={"/logos/eventassetred.png"}
           width={80}
           height={40}
+          alt="eventimg"
           className="absolute hidden sm:flex right-40 top-20"
         />
         <Image
           src={"/logos/eventassetgreen.png"}
           width={80}
           height={40}
+          alt="eventimg"
           className="absolute hidden sm:flex left-24 top-6"
         />
       </div>
 
-          <BlurFade delay={0.35} inView>
+          <BlurFade delay={0.16} inView>
       <Carousel className="w-[70vw] md:w-[85vw]">
         <CarouselContent>
           {data.map((item, index) => (

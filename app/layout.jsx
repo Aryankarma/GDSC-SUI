@@ -15,6 +15,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "GDSC-SUI'24",
+  icons: "/logo.png",
 };
 
 export default function RootLayout({ children }) {

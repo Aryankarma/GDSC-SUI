@@ -1,29 +1,25 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "./magicui/marquee";
-import { GridPattern } from "./magicui/grid-pattern";
 import { BlurFade } from "./magicui/blur-fade";
 
 const reviews = [
   {
-    img: "https://picsum.photos/600/350",
+    img: "https://res.cloudinary.com/dawbyjcyo/image/upload/q_auto,f_auto,w_400/v1740832988/2_z5eybo.png",
   },
   {
-    img: "https://picsum.photos/600/500",
+    img: "https://res.cloudinary.com/dawbyjcyo/image/upload/q_auto,f_auto,w_400/v1740832988/1_ae7qsy.png",
   },
   {
-    img: "https://picsum.photos/600/150",
+    img: "https://res.cloudinary.com/dawbyjcyo/image/upload/q_auto,f_auto,w_400/v1740832994/4_dj6eql.png",
   },
   {
-    img: "https://picsum.photos/600/400",
+    img: "https://res.cloudinary.com/dawbyjcyo/image/upload/q_auto,f_auto,w_400/v1740832999/3_qkhvle.png",
   },
   {
-    img: "https://picsum.photos/600/200",
+    img: "https://res.cloudinary.com/dawbyjcyo/image/upload/q_auto,f_auto,w_400/v1740832993/5_r9suak.png",
   },
   {
-    img: "https://picsum.photos/600/450",
-  },
-  {
-    img: "https://picsum.photos/600/300",
+    img: "https://res.cloudinary.com/dawbyjcyo/image/upload/q_auto,f_auto,w_400/v1740833005/6_poypg9.png",
   },
 ];
 
@@ -36,12 +32,13 @@ const ReviewCard = ({ img }) => {
       className={cn(
         "relative h-full w-[45vw] md:w-[40vw] cursor-pointer overflow-hidden rounded-3xl border p-1 gap-1 md:gap-2 flex justify-center",
         // light styles
-        "hover:border-2 hover:border-[#333333] transition-all rounded-[1.15rem] md:rounded-[3.25rem] hover:bg-gray-950/[0]"
+        "hover:border-2 hover:border-[#444444] transition-all rounded-[1.15rem] md:rounded-[3.25rem] hover:bg-gray-950/[0]"
       )}
     >
       <div className="flex">
-        <BlurFade delay={0.25} inView>
+        <BlurFade delay={0.35} inView>
           <img
+            
             className="hover:scale-[.99] transition-all rounded-[1.15rem] md:rounded-[3.25rem]"
             src={img}
           />

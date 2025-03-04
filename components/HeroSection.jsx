@@ -3,8 +3,6 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { InteractiveGridPattern } from "./magicui/interactive-grid-pattern";
 import AnimatedShinyText from "./magicui/animated-shiny-text";
-import { TextAnimate } from "./magicui/text-animate";
-import { BlurFade } from "./magicui/blur-fade";
 
 const HeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -139,7 +137,7 @@ const HeroSection = () => {
               </div>
               <div className="m-0">
                 <p className="mt-6 text-gray-900 text-lg leading-relaxed px-4">
-                  Here's how we make an impact!
+                  Here&apos;s how we make an impact!
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 md:gap-12 mt-2">
                   <div className="flex gap-12">
