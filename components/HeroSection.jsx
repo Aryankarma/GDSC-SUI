@@ -63,7 +63,7 @@ const HeroSection = () => {
         </nav>
 
         {/* Mobile Navigation */}
-        <div className="md:hidden absolute top-[72px] flex  left-0 right-0 bg-gray-100 z-40 justify-center">
+        <div className="md:hidden absolute top-[72px] flex  left-0 right-0 bg-white/95 shadow-lg z-40 justify-center">
           {isMenuOpen && (
             <>
               <div className="flex flex-col space-y-4 p-4">

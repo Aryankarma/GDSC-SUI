@@ -17,7 +17,7 @@ const mail = "/images/Mail.svg";
 const ContactUs = () => {
   return (
     <section id="contact" className="bg-[#181817] text-white py-16 px-4 flex flex-col items-center">
-      <div className="py-10 px-4 flex flex-col items-center relative">
+      <div className="py-10 px-4 flex flex-col items-center relative ">
         <button className="bg-[#361715] hover:bg-[#5f2824] transition border border-[#EA4335] px-6 py-1 rounded-full mb-8 text-sm md:text-base">
           Contact
         </button>
@@ -31,7 +31,7 @@ const ContactUs = () => {
       </div>
 
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md;gap-10 mt-4 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md;gap-10 mt-4 w-[85vw]">
         <Card
           icon={firstImg}
           title="Become a Speaker"
@@ -97,7 +97,7 @@ const ContactUs = () => {
 
 const Card = ({ icon, title, description }) => {
   return (
-    <div className="border border-gray-500 text-white bg-[#ffffff05] p-6 rounded-3xl text-center w-[75vw] md:w-full max-w-md mx-auto flex flex-col items-center">
+    <div className="border border-gray-500 text-white hover:bg-[#ffffff10] bg-[#ffffff05] hover:shadow-xl transition-all p-6 rounded-3xl text-center w-[75vw] md:w-full max-w-md mx-auto flex flex-col items-center">
       <div className="flex items-center justify-center">
         <Image src={icon} alt={title} width={35} height={35} />
       </div>
@@ -105,9 +105,9 @@ const Card = ({ icon, title, description }) => {
       <p className="text-gray-400 mt-2 text-sm md:text-base">
         {description}
       </p>
-      <button className="mt-4 border border-gray-500 px-5 py-2 rounded-3xl flex items-center mx-auto text-sm md:text-base">
+      <button className="mt-4 border border-gray-500 px-5 py-2 hover:bg-black/20 transition-all rounded-3xl flex items-center mx-auto text-sm md:text-base">
         <Link
-          className="flex gap-3 justify-center items-center"
+          className="flex gap-3 justify-center items-center "
           href="https://gdgprogresshub.vercel.app/"
           target="blank"
         >
@@ -118,7 +118,7 @@ const Card = ({ icon, title, description }) => {
             src={"/logos/emailicon.png"}
             alt="email icon"
           />
-          <span>Get in Touch</span>
+          <span >Get in Touch</span>
         </Link>
       </button>
     </div>
