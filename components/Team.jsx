@@ -167,7 +167,7 @@ const Team = () => {
               >
                 <CarouselContent>
                   {teamMembers.map((member, index) => (
-                    <BlurFade delay={0.35} inView>
+                    <BlurFade key={index} delay={0.35} inView>
                       <CarouselItem
                         key={index}
                         className="flex ml-4 sm:basis-2/3 md:basis-1/5 flex-col items-center gap-3 p-4"
