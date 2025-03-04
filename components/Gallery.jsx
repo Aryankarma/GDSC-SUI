@@ -38,8 +38,7 @@ const ReviewCard = ({ img }) => {
       <div className="flex">
         <BlurFade delay={0.35} inView>
           <img
-            
-            className="hover:scale-[.99] transition-all rounded-[1.15rem] md:rounded-[3.25rem]"
+            className="hover:scale-[.99]  w-[45vw] md:w-[40vw]  transition-all rounded-[1.15rem] md:rounded-[3.25rem]"
             src={img}
           />
         </BlurFade>

@@ -25,7 +25,8 @@ const teamMembers = [
       mail: "mailto:godhulivyas@gmail.com",
       twitter: "",
     },
-  },{
+  },
+  {
     name: "Aryan Karma",
     position: "Technical Lead",
     image: "/team/aryankarma.png",
@@ -119,7 +120,6 @@ const teamMembers = [
       github: "https://github.com/omjee-pandey",
       mail: "mailto:omjee.pandey2506@gmail.com",
       twitter: "",
-
     },
   },
   {
@@ -131,11 +131,10 @@ const teamMembers = [
       linkedin: "https://www.linkedin.com/in/ishika-keshanya-93237a268",
       github: "",
       mail: "mailto:ishikakeshanya@gmail.com",
-      twitter: ""
+      twitter: "",
     },
-  }
+  },
 ];
-
 
 const Team = () => {
   const plugin = React.useRef(
@@ -159,67 +158,68 @@ const Team = () => {
             </p>
           </div>
           <BlurFade delay={0.16} inView>
-          <div className="cards">
+            <div className="cards">
+              <Carousel
+                className="w-[86.5vw] mb-20"
+                plugins={[plugin.current]}
+                onMouseEnter={plugin.current.stop}
+                onMouseLeave={plugin.current.play}
+              >
+                <CarouselContent>
+                  {teamMembers.map((member, index) => (
+                    <BlurFade delay={0.35} inView>
+                      <CarouselItem
+                        key={index}
+                        className="flex ml-4 sm:basis-2/3 md:basis-1/5 flex-col items-center gap-3 p-4"
+                      >
+                        <div
+                          key={index}
+                          className="card p-3 flex gap-3"
+                          style={{ backgroundColor: member.bgColor }}
+                        >
+                          <img
+                            className="lead-image"
+                            src={member.image}
+                            alt={member.name}
+                          />
 
-            <Carousel
-              className="w-[86.5vw] mb-20"
-              plugins={[plugin.current]}
-              onMouseEnter={plugin.current.stop}
-              onMouseLeave={plugin.current.play}
-            >
-              <CarouselContent>
-                {teamMembers.map((member, index) => (
-                  <CarouselItem
-                    key={index}
-                    className="flex ml-4 sm:basis-2/3 md:basis-1/5 flex-col items-center gap-3 p-4"
-                  >
-                    <div
-                      key={index}
-                      className="card p-3 flex gap-3"
-                      style={{ backgroundColor: member.bgColor }}
-                    >
-                      <img
-                        className="lead-image"
-                        src={member.image}
-                        alt={member.name}
-                      />
-                      <div className="lead-info gap-1">
-                        <h3 className="lead-name">{member.name}</h3>
-                        <p className="position">{member.position}</p>
-                        <div className="relative">
-                          <Dock direction="top">
-                            {Object.entries(member.socialLinks).map(
-                              ([key, link]) => (
-                                <DockIcon key={key}>
-                                  <Link
-                                    href={link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    <Image
-                                      height={220}
-                                      width={220}
-                                      className=""
-                                      src={`/icons/${key}.png`}
-                                      alt={"leadimg"}
-                                    />
-                                  </Link>
-                                </DockIcon>
-                              )
-                            )}
-                          </Dock>
+                          <div className="lead-info gap-1">
+                            <h3 className="lead-name">{member.name}</h3>
+                            <p className="position">{member.position}</p>
+                            <div className="relative">
+                              <Dock direction="top">
+                                {Object.entries(member.socialLinks).map(
+                                  ([key, link]) => (
+                                    <DockIcon key={key}>
+                                      <Link
+                                        href={link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                      >
+                                        <Image
+                                          height={220}
+                                          width={220}
+                                          className=""
+                                          src={`/icons/${key}.png`}
+                                          alt={"leadimg"}
+                                        />
+                                      </Link>
+                                    </DockIcon>
+                                  )
+                                )}
+                              </Dock>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
+                      </CarouselItem>
+                    </BlurFade>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
           </BlurFade>
-
         </div>
       </div>
     </div>
