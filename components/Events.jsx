@@ -219,7 +219,7 @@ function Events() {
                       alt={item.title}
                       width={400}
                       height={250}
-                      className="mt-3 rounded-2xl border border-black/50"
+                      className="mt-3 rounded-2xl border border-black/50 w-full"
                     />
                   </BlurFade>
 
