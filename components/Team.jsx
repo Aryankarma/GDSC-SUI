@@ -35,7 +35,7 @@ const teamMembers = [
       linkedin: "https://www.linkedin.com/in/aryankarma",
       github: "https://github.com/aryankarma",
       mail: "mailto:aryankarma29@gmail.com",
-      twitter: "https://x.com/karmaaryn",
+      twitter: "https://x.com/karmaaryan",
     },
   },
   {
@@ -179,6 +179,8 @@ const Team = () => {
                         >
                           <img
                             className="lead-image"
+                            onContextMenu={(e)=> e.preventDefault()}
+                            draggable={false}
                             src={member.image}
                             alt={member.name}
                           />

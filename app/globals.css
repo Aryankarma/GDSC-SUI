@@ -6,6 +6,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   user-select: none;
 }
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555555 !important;
+  width: 4px !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555 !important;
+}
+
 
 @layer base {
   :root {
