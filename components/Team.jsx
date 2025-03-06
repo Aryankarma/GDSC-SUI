@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef, useState, useEffect} from "react";
 import "./TeamStyles.css";
 import Link from "next/link";
 import { Dock, DockIcon } from "./magicui/dock";
@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { BlurFade } from "./magicui/blur-fade";
+import { useInView } from "react-intersection-observer";
 
 const teamMembers = [
   {
@@ -137,13 +138,30 @@ const teamMembers = [
 ];
 
 const Team = () => {
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  );
+  const [autoplayRef, setAutoplayRef] = useState(null);
+  const [ref, inView] = useInView({
+    threshold: 0.2,
+    triggerOnce: false
+  });
+
+  // Instantiate the plugin only when it's needed (when in view)
+  useEffect(() => {
+    if (inView && !autoplayRef) {
+      // Only create the plugin when in view and it doesn't exist yet
+      const plugin = Autoplay({ delay: 2000, stopOnInteraction: true });
+      setAutoplayRef(plugin);
+    } else if (!inView && autoplayRef) {
+      // Stop autoplay when out of view
+      autoplayRef.stop();
+    } else if (inView && autoplayRef) {
+      // Resume autoplay when back in view
+      autoplayRef.play();
+    }
+  }, [inView, autoplayRef]);
 
   return (
-    <div id="team" className="body z-[20] ">
-      <div className="teamsframe pt-10 ">
+    <div id="team" className="body z-[20]">
+      <div className="teamsframe pt-10">
         <div className="content w-[75vw] md:w-full">
           <div className="py-10 px-4 flex flex-col items-center relative">
             <button className="bg-[#BDCEE9] hover:bg-[#98a8c0] transition border border-[#4285F4] px-6 py-1 rounded-full mb-4 text-sm md:text-base">
@@ -158,12 +176,12 @@ const Team = () => {
             </p>
           </div>
           <BlurFade delay={0.16} inView>
-            <div className="cards">
+            <div className="cards" ref={ref}>
               <Carousel
                 className="w-[86.5vw] mb-20"
-                plugins={[plugin.current]}
-                onMouseEnter={plugin.current.stop}
-                onMouseLeave={plugin.current.play}
+                plugins={autoplayRef ? [autoplayRef] : []}
+                onMouseEnter={() => autoplayRef?.stop()}
+                onMouseLeave={() => autoplayRef?.play()}
               >
                 <CarouselContent>
                   {teamMembers.map((member, index) => (
@@ -179,7 +197,7 @@ const Team = () => {
                         >
                           <img
                             className="lead-image"
-                            onContextMenu={(e)=> e.preventDefault()}
+                            onContextMenu={(e) => e.preventDefault()}
                             draggable={false}
                             src={member.image}
                             alt={member.name}
