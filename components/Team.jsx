@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import "./TeamStyles.css";
 import Link from "next/link";
 import { Dock, DockIcon } from "./magicui/dock";
