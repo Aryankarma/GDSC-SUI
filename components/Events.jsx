@@ -166,10 +166,10 @@ function Events() {
         <button className="bg-[#BDCEE9] hover:bg-[#98a8c0] transition border border-[#4285F4] px-6 py-1 rounded-full mb-4 text-sm md:text-base">
           Events
         </button>
-        <h2 className="text-2xl md:text-3xl font-semibold text-center w-full">
+        <h2 className="text-2xl md:text-3xl font-semibold text-center w-full z-20">
           Past Events: Relive the Moments
         </h2>
-        <p className="text-gray-900 mt-2 text-center max-w-lg">
+        <p className="text-gray-900 mt-2 text-center max-w-lg z-20">
           Explore highlights from our past events, workshops, and meetups—where
           developers connected, learned, and innovated together!
         </p>

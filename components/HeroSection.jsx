@@ -43,7 +43,7 @@ const HeroSection = () => {
               </a>
             </div>
             <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md transition-colors">
-              Join Us
+              <a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=DmwnWstsCgDQpBmGPMHHqBCsGrCDmSqGSQtWDcllWxnVcMkSRLFtLxTFppPbmctqnRDPfbGsTGPv" target="blank">Join Us</a>
             </button>
           </div>
 

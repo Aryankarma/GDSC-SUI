@@ -32,6 +32,7 @@ export default function Home() {
           <BlurFade delay={0.16} inView>
             <Team />
           </BlurFade>
+          
         </div>
         <BlurFade delay={0.16} inView>
           <JoinUs />

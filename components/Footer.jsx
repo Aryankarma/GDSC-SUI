@@ -61,14 +61,20 @@ const Footer = () => {
             </h3>
             <ul className="mt-2 text-gray-600  gap-2 flex flex-col">
               <p>
-                <a href="#" className="hover:underline" target="blank">
-                  Upcoming Events
-                </a>
+              <a
+                href="#events"
+                className="hover:text-blue-600 transition-colors"
+              >
+                Uppcoming Events
+              </a>
               </p>
               <p>
-                <a href="#" className="hover:underline" target="blank">
-                  Previous Events
-                </a>
+              <a
+                href="#events"
+                className="hover:text-blue-600 transition-colors"
+              >
+                Past Events
+              </a>
               </p>
             </ul>
           </div>
@@ -80,14 +86,20 @@ const Footer = () => {
             </h3>
             <ul className="mt-2 text-gray-600  gap-2 flex flex-col">
               <p>
-                <a href="#" className="hover:underline" target="blank">
-                  Leads
-                </a>
+              <a
+                href="#team"
+                className="hover:text-blue-600 transition-colors"
+              >
+                Leads
+              </a>
               </p>
               <p>
-                <a href="#" className="hover:underline" target="blank">
-                  Core Members
-                </a>
+              <a
+                href="#team"
+                className="hover:text-blue-600 transition-colors"
+              >
+                Core Member
+              </a>
               </p>
             </ul>
           </div>
