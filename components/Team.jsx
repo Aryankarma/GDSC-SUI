@@ -172,7 +172,7 @@ const Team = () => {
             </h2>
             <p className="text-gray-900 mt-2 text-center">
               A passionate team of developers, innovators, and community
-              builders driving GDSC-SUI forward.
+              builders driving GDSC-SUI forward. 
             </p>
           </div>
           <BlurFade delay={0.16} inView>
