@@ -160,7 +160,7 @@ const Team = () => {
   }, [inView, autoplayRef]);
 
   return (
-    <div id="team" className="body z-[20]">
+    <div id="team" className="body2 z-[20]">
       <div className="teamsframe pt-10">
         <div className="content w-[75vw] md:w-full">
           <div className="py-10 px-4 flex flex-col items-center relative">
