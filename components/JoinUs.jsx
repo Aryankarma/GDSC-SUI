@@ -23,7 +23,7 @@ const JoinUs = () => {
           Connect, learn, and grow with a community of developers passionate about technology and innovation.
         </p>
         <button className="bg-[#4285F4] hover:bg-blue-600 text-white mt-4 py-2 px-5 rounded-lg shadow-lg transition">
-          <a href='https://mail.google.com/mail/u/0/?ogbl#inbox?compose=DmwnWstsCgDQpBmGPMHHqBCsGrCDmSqGSQtWDcllWxnVcMkSRLFtLxTFppPbmctqnRDPfbGsTGPv' target='blank'>Join Us Now</a>
+          <a href='https://chat.whatsapp.com/F0OZz8qBGp376oCzOYd1AD' target='blank'>Join Us Now</a>
         </button>
       </div>
       </BlurFade>

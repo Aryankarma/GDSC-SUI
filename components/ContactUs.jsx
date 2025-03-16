@@ -47,7 +47,6 @@ const ContactUs = () => {
           href="mailto:godhulivyas@gmail.com"
         />
       </div>
-      Join us in shaping
       {/* Social Media Links */}
       <div className="mt-8 flex flex-col items-center">
         <Dock direction="middle">
