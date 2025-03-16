@@ -9,7 +9,6 @@ const thirdImg = "/images/Frame3.svg";
 
 const instagram = "/images/Instagram.svg";
 const linkedin = "/images/linkedin.svg";
-const facebook = "/images/Facebook.svg";
 const whatsapp = "/images/Whatsapp.svg";
 const mail = "/images/Mail.svg";
 
