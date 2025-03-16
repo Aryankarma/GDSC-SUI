@@ -43,11 +43,11 @@ const ContactUs = () => {
         <Card
           icon={thirdImg}
           title="Become a Sponsor"
-          description="Join us in shaping the future of technology by sponsoring GDG. Your support helps us organize impactful events, workshops, and hackathons that empower developers, students, and tech enthusiasts."
+          description="Join us in shaping the future of technology by sponsoring GDG. Your support helps us organize impactful events, workshops, and hackathons that empower tech enthusiasts."
           href="mailto:godhulivyas@gmail.com"
         />
       </div>
-
+      Join us in shaping
       {/* Social Media Links */}
       <div className="mt-8 flex flex-col items-center">
         <Dock direction="middle">
