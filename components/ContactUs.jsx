@@ -33,19 +33,19 @@ const ContactUs = () => {
           icon={firstImg}
           title="Become a Speaker"
           description="Join Google Developers Group (GDG) On-Campus at SAGE University as a speaker and share your insights on emerging technologies, software development, and industry trends."
-          href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=DmwnWstsCgDQpBmGPMHHqBCsGrCDmSqGSQtWDcllWxnVcMkSRLFtLxTFppPbmctqnRDPfbGsTGPv" // Unique link 1
+          href="mailto:godhulivyas@gmail.com"
         />
         <Card
           icon={secondImg}
           title="Host a Hackathon"
           description="Collaborate with Google Developers Group to organize a dynamic hackathon that fosters creativity, problem-solving, and cutting-edge tech solutions."
-          href="https://www.linkedin.com/company/gdg-on-campus-sui/" // Unique link 2
+          href="mailto:godhulivyas@gmail.com"
         />
         <Card
           icon={thirdImg}
           title="Become a Sponsor"
           description="Join us in shaping the future of technology by sponsoring GDG. Your support helps us organize impactful events, workshops, and hackathons that empower developers, students, and tech enthusiasts."
-          href="https://www.linkedin.com/company/gdg-on-campus-sui/" // Unique link 3
+          href="mailto:godhulivyas@gmail.com"
         />
       </div>
 
@@ -54,7 +54,7 @@ const ContactUs = () => {
         <Dock direction="middle">
           <DockIcon>
             <SocialLink
-              href="https://www.instagram.com/reel/DBeSh4FshQm/?igsh=MTQ0b2d4bWp4azk2bQ%3D%3D"
+              href="https://www.instagram.com/gdg_sage.university/"
               icon={instagram}
               alt="Instagram"
             />
@@ -68,21 +68,14 @@ const ContactUs = () => {
           </DockIcon>
           <DockIcon>
             <SocialLink
-              href="https://facebook.com"
-              icon={facebook}
-              alt="Facebook"
-            />
-          </DockIcon>
-          <DockIcon>
-            <SocialLink
-              href="https://chat.whatsapp.com/CrNgoxoXnRcGSQWL77xAvZ"
+              href="https://chat.whatsapp.com/F0OZz8qBGp376oCzOYd1AD"
               icon={whatsapp}
               alt="WhatsApp"
             />
           </DockIcon>
           <DockIcon>
             <SocialLink
-              href="mailto:gdgsage2024@gmail.com"
+              href="mailto:godhulivyas@gmail.com"
               icon={mail}
               alt="Mail"
             />
