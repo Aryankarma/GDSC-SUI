@@ -13,17 +13,16 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { BlurFade } from "./magicui/blur-fade";
 import { useInView } from "react-intersection-observer";
-
 const teamMembers = [
   {
     name: "Godhuli Vyas",
     position: "Chapter Lead",
     image: "/team/godhuliVyas.png",
-    bgColor: "#FFC0CB",
+    bgColor: "#FFC0CB", // Kept as requested
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/godhuli-vyas-4b7128253",
       github: "https://github.com/godhulivyas",
-      mail: "mailto:godhulivyas@gmail.com",
+      mail: "mailto:godhuli.vyas@gmail.com",
       twitter: "",
     },
   },
@@ -31,7 +30,7 @@ const teamMembers = [
     name: "Aryan Karma",
     position: "Technical Lead",
     image: "/team/aryankarma.png",
-    bgColor: "#A0C2F9",
+    bgColor: "#A0C2F9", // Kept as requested
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/aryankarma",
       github: "https://github.com/aryankarma",
@@ -43,7 +42,7 @@ const teamMembers = [
     name: "Aditya Kumar Junwal",
     position: "Event Lead",
     image: "/team/adityaJunwal.png",
-    bgColor: "#FFC0CB",
+    bgColor: "#FDDD81",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/aditya-kumar-junwal-66aa77184",
       github: "https://github.com/adityajunwal",
@@ -55,7 +54,7 @@ const teamMembers = [
     name: "Prem Panchal",
     position: "Videography Lead",
     image: "/team/premPanchal.png",
-    bgColor: "#A0C2F9",
+    bgColor: "#60BE90",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/prem-panchal-90a844300",
       github: "https://github.com/developerhumain",
@@ -67,7 +66,7 @@ const teamMembers = [
     name: "Muskan Wagh",
     position: "Sponsorship Co-Lead",
     image: "/team/muskanWagh.png",
-    bgColor: "#FDDD81",
+    bgColor: "#F4A19A",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/muskan-wagh-22b2b5325",
       github: "",
@@ -79,7 +78,7 @@ const teamMembers = [
     name: "Samyak Gupta",
     position: "Technical Web3 Lead",
     image: "/team/samyakGupta.png",
-    bgColor: "#60BE90",
+    bgColor: "#A0C2F9",
     socialLinks: {
       linkedin: "https://linkedin.com/in/samyakzer0",
       github: "https://github.com/samyakzer0",
@@ -91,7 +90,7 @@ const teamMembers = [
     name: "Saurish Sagar",
     position: "Web Dev Co-Lead",
     image: "/team/saurishSagar.png",
-    bgColor: "#F4A19A",
+    bgColor: "#FDDD81",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/saurish-sagar",
       github: "https://github.com/SaurishS",
@@ -103,7 +102,7 @@ const teamMembers = [
     name: "Yashkirti Tomar",
     position: "Content Team Lead",
     image: "/team/yashkirtiTomar.png",
-    bgColor: "#A0C2F9",
+    bgColor: "#60BE90",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/yashkirti-tomar-17ba08297",
       github: "https://github.com/yashkirtitomar",
@@ -115,7 +114,7 @@ const teamMembers = [
     name: "Omjee Pandey",
     position: "App Development Lead",
     image: "/team/omjeePandey.png",
-    bgColor: "#FFC0CB",
+    bgColor: "#F4A19A",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/omjee-pandey-31800533a",
       github: "https://github.com/omjee-pandey",
@@ -127,7 +126,7 @@ const teamMembers = [
     name: "Ishika Keshanya",
     position: "Community Lead",
     image: "/team/ishikaKeshanya.png",
-    bgColor: "#FDDD81",
+    bgColor: "#A0C2F9",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/ishika-keshanya-93237a268",
       github: "",
@@ -135,7 +134,92 @@ const teamMembers = [
       twitter: "",
     },
   },
+  {
+    name: "Rishabh Singh",
+    position: "GRAPHIC Lead",
+    image: "/team/rishabhsingh.jpg",
+    bgColor: "#FDDD81",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/rishabhsingh4114",
+      github: "",
+      mail: "mailto:rs102243@gmail.com",
+      twitter: "",
+    },
+  },
+  {
+    name: "Krishna Choudhary",
+    position: "Graphic Team Co-lead",
+    image: "/team/krishnachoudhary.jpg",
+    bgColor: "#60BE90",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/krishna-choudhary-036992296",
+      github: "https://github.com/krishnachoudhary19",
+      mail: "mailto:krishnachoudhary9424@gmail.com",
+      twitter: "https://x.com/_krishhhhna_19?t=h3s55X-AUhYN7LU15T-JGw&s=08",
+    },
+  },
+  {
+    name: "Ansh Sharma",
+    position: "Community Co-lead",
+    image: "/team/anshsharma.jpg",
+    bgColor: "#F4A19A",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/ansh-sharma-79aa01278",
+      github: "",
+      mail: "mailto:panditansh016@gmail.com",
+      twitter: "",
+    },
+  },
+  {
+    name: "Richa Rajput",
+    position: "Technical Co-lead",
+    image: "/team/richarajput.jpg",
+    bgColor: "#A0C2F9", // Kept as requested
+    socialLinks: {
+      linkedin: "www.linkedin.com/in/richa-rajput-6650b3217",
+      github: "https://github.com/richzr14",
+      mail: "mailto:Richarajput1350@gmail.com",
+      twitter: "https://x.com/richaiiii",
+    },
+  },
+  {
+    name: "Anurag Singh Gahlot",
+    position: "Sponsorship Lead",
+    image: "/team/anuragsinghgahlot.jpg",
+    bgColor: "#FDDD81",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/anurag-singh-gahlot-20983a325",
+      github: "",
+      mail: "mailto:anuragsinghgahlot@gmail.com",
+      twitter: "",
+    },
+  },
+  {
+    name: "Anshika Sahu",
+    position: "Social Media Management Lead",
+    image: "/team/anshikasahu.jpg",
+    bgColor: "#60BE90",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/anshika-sahu-83a238297",
+      github: "",
+      mail: "mailto:anshikasahu34@gmail.com",
+      twitter: "",
+    },
+  },
+  {
+    name: "Lakshya Soni",
+    position: "Technical Cloud Lead",
+    image: "/team/lakshyasoni.jpg",
+    bgColor: "#F4A19A",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/lakshya004",
+      github: "https://github.com/lakshya-004",
+      mail: "mailto:lsoni2407@gmail.com",
+      twitter: "https://x.com/lakshya2412?s=09",
+    },
+  },
 ];
+
 
 const Team = () => {
   const [autoplayRef, setAutoplayRef] = useState(null);
@@ -196,7 +280,7 @@ const Team = () => {
                           style={{ backgroundColor: member.bgColor }}
                         >
                           <img
-                            className="lead-image"
+                            className="lead-image object-cover"
                             onContextMenu={(e) => e.preventDefault()}
                             draggable={false}
                             src={member.image}
