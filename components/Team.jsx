@@ -18,7 +18,7 @@ const teamMembers = [
     name: "Godhuli Vyas",
     position: "Chapter Lead",
     image: "/team/godhuliVyas.png",
-    bgColor: "#FFC0CB", // Kept as requested
+    bgColor: "#FFC0CB",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/godhuli-vyas-4b7128253",
       github: "https://github.com/godhulivyas",
@@ -30,7 +30,7 @@ const teamMembers = [
     name: "Aryan Karma",
     position: "Technical Lead",
     image: "/team/aryankarma.png",
-    bgColor: "#A0C2F9", // Kept as requested
+    bgColor: "#A0C2F9",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/aryankarma",
       github: "https://github.com/aryankarma",
@@ -174,9 +174,9 @@ const teamMembers = [
     name: "Richa Rajput",
     position: "Technical Co-lead",
     image: "/team/richarajput.jpg",
-    bgColor: "#A0C2F9", // Kept as requested
+    bgColor: "#A0C2F9",
     socialLinks: {
-      linkedin: "www.linkedin.com/in/richa-rajput-6650b3217",
+      linkedin: "https://www.linkedin.com/in/richa-rajput-6650b3217",
       github: "https://github.com/richzr14",
       mail: "mailto:Richarajput1350@gmail.com",
       twitter: "https://x.com/richaiiii",
